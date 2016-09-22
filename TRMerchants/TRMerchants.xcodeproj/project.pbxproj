@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C22AC00D1D9273A40066A501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC00B1D9273A40066A501 /* Main.storyboard */; };
+		C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */; };
+		C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0111D9273A40066A501 /* Assets.xcassets */; };
+		C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */; };
+		C22AC0201D9273A40066A501 /* TRMerchantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC01F1D9273A40066A501 /* TRMerchantsTests.m */; };
+		C22AC02B1D9273A40066A501 /* TRMerchantsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC02A1D9273A40066A501 /* TRMerchantsUITests.m */; };
+		C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC04B1D9277240066A501 /* AppDelegate.m */; };
+		C22AC04E1D9277240066A501 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC04C1D9277240066A501 /* main.m */; };
+		C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */; };
+		C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */; };
+		C2B70D0A1D927D2900DF5A4C /* TRGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B70D081D927D2900DF5A4C /* TRGuideViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C22AC01C1D9273A40066A501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22ABFF71D9273A40066A501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C22ABFFE1D9273A40066A501;
+			remoteInfo = TRMerchants;
+		};
+		C22AC0271D9273A40066A501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22ABFF71D9273A40066A501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C22ABFFE1D9273A40066A501;
+			remoteInfo = TRMerchants;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C22ABFFF1D9273A40066A501 /* TRMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22AC00C1D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRMerchants.xcdatamodel; sourceTree = "<group>"; };
+		C22AC0111D9273A40066A501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C22AC0141D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C22AC0161D9273A40066A501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C22AC01B1D9273A40066A501 /* TRMerchantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRMerchantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22AC01F1D9273A40066A501 /* TRMerchantsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRMerchantsTests.m; sourceTree = "<group>"; };
+		C22AC0211D9273A40066A501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C22AC0261D9273A40066A501 /* TRMerchantsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRMerchantsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22AC02A1D9273A40066A501 /* TRMerchantsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRMerchantsUITests.m; sourceTree = "<group>"; };
+		C22AC02C1D9273A40066A501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C22AC04A1D9277240066A501 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C22AC04B1D9277240066A501 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C22AC04C1D9277240066A501 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainViewController.h; sourceTree = "<group>"; };
+		C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainViewController.m; sourceTree = "<group>"; };
+		C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGuideViewController.h; sourceTree = "<group>"; };
+		C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGuideViewController.m; sourceTree = "<group>"; };
+		C2B70D081D927D2900DF5A4C /* TRGuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRGuideViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C22ABFFC1D9273A40066A501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22AC0181D9273A40066A501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22AC0231D9273A40066A501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C22ABFF61D9273A40066A501 = {
+			isa = PBXGroup;
+			children = (
+				C22AC0011D9273A40066A501 /* TRMerchants */,
+				C22AC01E1D9273A40066A501 /* TRMerchantsTests */,
+				C22AC0291D9273A40066A501 /* TRMerchantsUITests */,
+				C22AC0001D9273A40066A501 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C22AC0001D9273A40066A501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C22ABFFF1D9273A40066A501 /* TRMerchants.app */,
+				C22AC01B1D9273A40066A501 /* TRMerchantsTests.xctest */,
+				C22AC0261D9273A40066A501 /* TRMerchantsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C22AC0011D9273A40066A501 /* TRMerchants */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC0381D9277240066A501 /* Classes */,
+				C22AC00B1D9273A40066A501 /* Main.storyboard */,
+				C22AC0111D9273A40066A501 /* Assets.xcassets */,
+				C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */,
+				C22AC0021D9273A40066A501 /* Supporting Files */,
+			);
+			path = TRMerchants;
+			sourceTree = "<group>";
+		};
+		C22AC0021D9273A40066A501 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC0161D9273A40066A501 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C22AC01E1D9273A40066A501 /* TRMerchantsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC01F1D9273A40066A501 /* TRMerchantsTests.m */,
+				C22AC0211D9273A40066A501 /* Info.plist */,
+			);
+			path = TRMerchantsTests;
+			sourceTree = "<group>";
+		};
+		C22AC0291D9273A40066A501 /* TRMerchantsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC02A1D9273A40066A501 /* TRMerchantsUITests.m */,
+				C22AC02C1D9273A40066A501 /* Info.plist */,
+			);
+			path = TRMerchantsUITests;
+			sourceTree = "<group>";
+		};
+		C22AC0381D9277240066A501 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC0391D9277240066A501 /* Goods */,
+				C22AC03D1D9277240066A501 /* LoginAndRegist */,
+				C22AC0411D9277240066A501 /* Main */,
+				C22AC0451D9277240066A501 /* Order */,
+				C22AC0491D9277240066A501 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C22AC0391D9277240066A501 /* Goods */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC03A1D9277240066A501 /* Controller */,
+				C22AC03B1D9277240066A501 /* Model */,
+				C22AC03C1D9277240066A501 /* View */,
+			);
+			path = Goods;
+			sourceTree = "<group>";
+		};
+		C22AC03A1D9277240066A501 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C22AC03B1D9277240066A501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C22AC03C1D9277240066A501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C22AC03D1D9277240066A501 /* LoginAndRegist */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC03E1D9277240066A501 /* Controller */,
+				C22AC03F1D9277240066A501 /* Model */,
+				C22AC0401D9277240066A501 /* View */,
+			);
+			path = LoginAndRegist;
+			sourceTree = "<group>";
+		};
+		C22AC03E1D9277240066A501 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */,
+				C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */,
+				C2B70D081D927D2900DF5A4C /* TRGuideViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C22AC03F1D9277240066A501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C22AC0401D9277240066A501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C22AC0411D9277240066A501 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC0421D9277240066A501 /* Controller */,
+				C22AC0431D9277240066A501 /* Model */,
+				C22AC0441D9277240066A501 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C22AC0421D9277240066A501 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */,
+				C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C22AC0431D9277240066A501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C22AC0441D9277240066A501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C22AC0451D9277240066A501 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC0461D9277240066A501 /* Controller */,
+				C22AC0471D9277240066A501 /* Model */,
+				C22AC0481D9277240066A501 /* View */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		C22AC0461D9277240066A501 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C22AC0471D9277240066A501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C22AC0481D9277240066A501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C22AC0491D9277240066A501 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C22AC04A1D9277240066A501 /* AppDelegate.h */,
+				C22AC04B1D9277240066A501 /* AppDelegate.m */,
+				C22AC04C1D9277240066A501 /* main.m */,
+				C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C22ABFFE1D9273A40066A501 /* TRMerchants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C22AC02F1D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchants" */;
+			buildPhases = (
+				C22ABFFB1D9273A40066A501 /* Sources */,
+				C22ABFFC1D9273A40066A501 /* Frameworks */,
+				C22ABFFD1D9273A40066A501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRMerchants;
+			productName = TRMerchants;
+			productReference = C22ABFFF1D9273A40066A501 /* TRMerchants.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C22AC01A1D9273A40066A501 /* TRMerchantsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C22AC0321D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchantsTests" */;
+			buildPhases = (
+				C22AC0171D9273A40066A501 /* Sources */,
+				C22AC0181D9273A40066A501 /* Frameworks */,
+				C22AC0191D9273A40066A501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C22AC01D1D9273A40066A501 /* PBXTargetDependency */,
+			);
+			name = TRMerchantsTests;
+			productName = TRMerchantsTests;
+			productReference = C22AC01B1D9273A40066A501 /* TRMerchantsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C22AC0251D9273A40066A501 /* TRMerchantsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C22AC0351D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchantsUITests" */;
+			buildPhases = (
+				C22AC0221D9273A40066A501 /* Sources */,
+				C22AC0231D9273A40066A501 /* Frameworks */,
+				C22AC0241D9273A40066A501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C22AC0281D9273A40066A501 /* PBXTargetDependency */,
+			);
+			name = TRMerchantsUITests;
+			productName = TRMerchantsUITests;
+			productReference = C22AC0261D9273A40066A501 /* TRMerchantsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C22ABFF71D9273A40066A501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = wgf;
+				TargetAttributes = {
+					C22ABFFE1D9273A40066A501 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					C22AC01A1D9273A40066A501 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C22ABFFE1D9273A40066A501;
+					};
+					C22AC0251D9273A40066A501 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C22ABFFE1D9273A40066A501;
+					};
+				};
+			};
+			buildConfigurationList = C22ABFFA1D9273A40066A501 /* Build configuration list for PBXProject "TRMerchants" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C22ABFF61D9273A40066A501;
+			productRefGroup = C22AC0001D9273A40066A501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C22ABFFE1D9273A40066A501 /* TRMerchants */,
+				C22AC01A1D9273A40066A501 /* TRMerchantsTests */,
+				C22AC0251D9273A40066A501 /* TRMerchantsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C22ABFFD1D9273A40066A501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */,
+				C2B70D0A1D927D2900DF5A4C /* TRGuideViewController.xib in Resources */,
+				C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */,
+				C22AC00D1D9273A40066A501 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22AC0191D9273A40066A501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22AC0241D9273A40066A501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C22ABFFB1D9273A40066A501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
+				C22AC04E1D9277240066A501 /* main.m in Sources */,
+				C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */,
+				C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */,
+				C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22AC0171D9273A40066A501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22AC0201D9273A40066A501 /* TRMerchantsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22AC0221D9273A40066A501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22AC02B1D9273A40066A501 /* TRMerchantsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C22AC01D1D9273A40066A501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C22ABFFE1D9273A40066A501 /* TRMerchants */;
+			targetProxy = C22AC01C1D9273A40066A501 /* PBXContainerItemProxy */;
+		};
+		C22AC0281D9273A40066A501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C22ABFFE1D9273A40066A501 /* TRMerchants */;
+			targetProxy = C22AC0271D9273A40066A501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C22AC00B1D9273A40066A501 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C22AC00C1D9273A40066A501 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C22AC0141D9273A40066A501 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C22AC02D1D9273A40066A501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C22AC02E1D9273A40066A501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C22AC0301D9273A40066A501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TRMerchants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgfttios.TRMerchants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C22AC0311D9273A40066A501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TRMerchants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgfttios.TRMerchants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C22AC0331D9273A40066A501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TRMerchantsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgfttios.TRMerchantsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRMerchants.app/TRMerchants";
+			};
+			name = Debug;
+		};
+		C22AC0341D9273A40066A501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TRMerchantsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgfttios.TRMerchantsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRMerchants.app/TRMerchants";
+			};
+			name = Release;
+		};
+		C22AC0361D9273A40066A501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TRMerchantsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgfttios.TRMerchantsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TRMerchants;
+			};
+			name = Debug;
+		};
+		C22AC0371D9273A40066A501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TRMerchantsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgfttios.TRMerchantsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TRMerchants;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C22ABFFA1D9273A40066A501 /* Build configuration list for PBXProject "TRMerchants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22AC02D1D9273A40066A501 /* Debug */,
+				C22AC02E1D9273A40066A501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C22AC02F1D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22AC0301D9273A40066A501 /* Debug */,
+				C22AC0311D9273A40066A501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C22AC0321D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchantsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22AC0331D9273A40066A501 /* Debug */,
+				C22AC0341D9273A40066A501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C22AC0351D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchantsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22AC0361D9273A40066A501 /* Debug */,
+				C22AC0371D9273A40066A501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */,
+			);
+			currentVersion = C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */;
+			name = TRMerchants.xcdatamodeld;
+			path = ../../TRMerchants.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C22ABFF71D9273A40066A501 /* Project object */;
+}
