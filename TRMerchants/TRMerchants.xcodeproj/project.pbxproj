@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67B5B989C796FEA8A6FF283A /* libPods-TRMerchants.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0493DAE880C2A972B6143 /* libPods-TRMerchants.a */; };
 		C22AC00D1D9273A40066A501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC00B1D9273A40066A501 /* Main.storyboard */; };
 		C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */; };
 		C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0111D9273A40066A501 /* Assets.xcassets */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AEAD10619A901C968458990 /* Pods-TRMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMerchants.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants.debug.xcconfig"; sourceTree = "<group>"; };
+		96BBC9224893D5FDB25D09C5 /* Pods-TRMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMerchants.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants.release.xcconfig"; sourceTree = "<group>"; };
 		C22ABFFF1D9273A40066A501 /* TRMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22AC00C1D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRMerchants.xcdatamodel; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainViewController.m; sourceTree = "<group>"; };
 		C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGuideViewController.h; sourceTree = "<group>"; };
 		C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGuideViewController.m; sourceTree = "<group>"; };
+		F4F0493DAE880C2A972B6143 /* libPods-TRMerchants.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRMerchants.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B5B989C796FEA8A6FF283A /* libPods-TRMerchants.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6C547A0A4B13083D923FDC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AEAD10619A901C968458990 /* Pods-TRMerchants.debug.xcconfig */,
+				96BBC9224893D5FDB25D09C5 /* Pods-TRMerchants.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C22ABFF61D9273A40066A501 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +128,8 @@
 				C22AC01E1D9273A40066A501 /* TRMerchantsTests */,
 				C22AC0291D9273A40066A501 /* TRMerchantsUITests */,
 				C22AC0001D9273A40066A501 /* Products */,
+				B6C547A0A4B13083D923FDC1 /* Pods */,
+				D99651BEB2C18CA596675C77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,6 +364,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		D99651BEB2C18CA596675C77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F0493DAE880C2A972B6143 /* libPods-TRMerchants.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C22AC02F1D9273A40066A501 /* Build configuration list for PBXNativeTarget "TRMerchants" */;
 			buildPhases = (
+				50D3D86D2FF2300A78E26228 /* [CP] Check Pods Manifest.lock */,
 				C22ABFFB1D9273A40066A501 /* Sources */,
 				C22ABFFC1D9273A40066A501 /* Frameworks */,
 				C22ABFFD1D9273A40066A501 /* Resources */,
+				FC57423F36F13406CA1920DD /* [CP] Embed Pods Frameworks */,
+				EBAAFB6843F7AE3F407944E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,6 +504,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50D3D86D2FF2300A78E26228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAAFB6843F7AE3F407944E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC57423F36F13406CA1920DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C22ABFFB1D9273A40066A501 /* Sources */ = {
@@ -639,6 +714,7 @@
 		};
 		C22AC0301D9273A40066A501 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEAD10619A901C968458990 /* Pods-TRMerchants.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = TRMerchants/Classes/Other/PrefixHeader.pch;
@@ -652,6 +728,7 @@
 		};
 		C22AC0311D9273A40066A501 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BBC9224893D5FDB25D09C5 /* Pods-TRMerchants.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = TRMerchants/Classes/Other/PrefixHeader.pch;

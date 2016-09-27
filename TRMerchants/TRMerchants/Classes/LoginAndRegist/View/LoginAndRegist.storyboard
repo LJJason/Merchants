@@ -120,6 +120,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BJ8-cI-cse"/>
+                    <connections>
+                        <outlet property="pwdTextField" destination="EHT-bP-nbZ" id="L90-Oq-qSP"/>
+                        <outlet property="userNameTextField" destination="uuz-GQ-yQg" id="E7r-Re-Zv5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfT-v3-xYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

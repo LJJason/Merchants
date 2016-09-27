@@ -10,6 +10,12 @@
 
 @interface TRLoginViewController ()
 
+//用户名文本框
+@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+//密码文本框
+@property (weak, nonatomic) IBOutlet UITextField *pwdTextField;
+
+
 @end
 
 @implementation TRLoginViewController
@@ -20,15 +26,19 @@
     
 }
 
-
-
-
-- (void)dealloc {
-    TRLog(@"滚蛋");
+//登录
+- (void)login
+{
+    
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
-}
+
+
+
+//- (void)dealloc {
+//    TRLog(@"滚蛋");
+//}
+
+
 
 @end
