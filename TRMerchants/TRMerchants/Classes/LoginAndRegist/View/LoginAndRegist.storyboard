@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RUa-gV-nys">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guide View Controller-->
+        <scene sceneID="RRo-T9-Q8m">
+            <objects>
+                <viewController id="RUa-gV-nys" customClass="TRGuideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oz9-6A-zJa"/>
+                        <viewControllerLayoutGuide type="bottom" id="PE9-xL-rOK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hN9-es-RPT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rY3-ir-BMT"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-Qr-1TN">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Yem-aU-1bU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnH-Gi-RlW">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="icu-bY-5U1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h48-he-B1C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XM9-Ic-P5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="RUa-gV-nys" eventType="touchUpInside" id="G2y-F3-5YD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMW-O9-ChV">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qsf-PJ-Cko"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="regist" destination="RUa-gV-nys" eventType="touchUpInside" id="xZk-aP-wzT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OnH-Gi-RlW" firstAttribute="width" secondItem="hN9-es-RPT" secondAttribute="width" multiplier="0.16" id="HBe-jf-OnS"/>
+                            <constraint firstItem="rY3-ir-BMT" firstAttribute="leading" secondItem="hN9-es-RPT" secondAttribute="leading" id="Igh-YS-Qbs"/>
+                            <constraint firstItem="PE9-xL-rOK" firstAttribute="top" secondItem="rY3-ir-BMT" secondAttribute="bottom" id="Kwt-v4-6Qx"/>
+                            <constraint firstItem="PE9-xL-rOK" firstAttribute="top" secondItem="Faf-Qr-1TN" secondAttribute="bottom" constant="45" id="RLE-Ls-ew7"/>
+                            <constraint firstItem="Faf-Qr-1TN" firstAttribute="leading" secondItem="hN9-es-RPT" secondAttribute="leading" id="Sfh-od-ac4"/>
+                            <constraint firstItem="h48-he-B1C" firstAttribute="leading" secondItem="Faf-Qr-1TN" secondAttribute="trailing" id="YbI-40-TqQ"/>
+                            <constraint firstItem="BMW-O9-ChV" firstAttribute="width" secondItem="hN9-es-RPT" secondAttribute="width" multiplier="0.25" id="YqA-tQ-YFk"/>
+                            <constraint firstItem="rY3-ir-BMT" firstAttribute="top" secondItem="hN9-es-RPT" secondAttribute="top" id="d5C-V6-z0M"/>
+                            <constraint firstAttribute="trailing" secondItem="OnH-Gi-RlW" secondAttribute="trailing" id="dZL-a0-0S1"/>
+                            <constraint firstItem="OnH-Gi-RlW" firstAttribute="leading" secondItem="BMW-O9-ChV" secondAttribute="trailing" id="f25-zG-DR4"/>
+                            <constraint firstItem="PE9-xL-rOK" firstAttribute="top" secondItem="h48-he-B1C" secondAttribute="bottom" constant="40" id="nyv-uQ-LUf"/>
+                            <constraint firstItem="BMW-O9-ChV" firstAttribute="bottom" secondItem="h48-he-B1C" secondAttribute="bottom" id="oE7-eT-r0E"/>
+                            <constraint firstItem="Faf-Qr-1TN" firstAttribute="width" secondItem="hN9-es-RPT" secondAttribute="width" multiplier="0.16" id="p0Y-56-Wdm"/>
+                            <constraint firstItem="h48-he-B1C" firstAttribute="width" secondItem="hN9-es-RPT" secondAttribute="width" multiplier="0.25" id="pqi-Kn-AZq"/>
+                            <constraint firstAttribute="trailing" secondItem="rY3-ir-BMT" secondAttribute="trailing" id="qLE-yi-EN8"/>
+                            <constraint firstItem="OnH-Gi-RlW" firstAttribute="bottom" secondItem="Faf-Qr-1TN" secondAttribute="bottom" id="vqv-ZI-1Fv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="h48-he-B1C" id="TCm-oC-Fhd"/>
+                        <outlet property="registBtn" destination="BMW-O9-ChV" id="vzB-jf-1vG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YG0-v4-YaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335" y="-48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_bg" width="1242" height="2208"/>
+    </resources>
+</document>
