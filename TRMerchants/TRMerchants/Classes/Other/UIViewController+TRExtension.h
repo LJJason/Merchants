@@ -10,4 +10,14 @@
 
 @interface UIViewController (TRExtension)
 
+/** 根据Storyboard名 和 Storyboard ID 获得控制器 */
++ (instancetype)viewControllerWtithStoryboardName:(NSString *)name identifier:(NSString *)identifier;
+
+
+/** 从MainStoryboard 根据 Storyboard ID 获得控制器 */
++ (instancetype)viewControllerWtithMainStoryboardIdentifier:(NSString *)identifier;
+
+/** 根据Storyboard名 获得箭头指向的控制器 */
++ (instancetype)instantiateInitialViewControllerWithStoryboardName:(NSString *)name;
+
 @end

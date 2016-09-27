@@ -10,4 +10,22 @@
 
 @implementation UIViewController (TRExtension)
 
++ (instancetype)viewControllerWtithStoryboardName:(NSString *)name identifier:(NSString *)identifier {
+    
+    //创建Storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
+
+    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+    
+    return viewController;
+}
+
++ (instancetype)viewControllerWtithMainStoryboardIdentifier:(NSString *)identifier {
+    return [self viewControllerWtithStoryboardName:@"Main" identifier:identifier];
+}
+
++ (instancetype)instantiateInitialViewControllerWithStoryboardName:(NSString *)name {
+    return [[UIStoryboard storyboardWithName:name bundle:nil] instantiateInitialViewController];
+}
+
 @end

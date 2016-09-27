@@ -17,6 +17,12 @@
 		C22AC04E1D9277240066A501 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC04C1D9277240066A501 /* main.m */; };
 		C27E52D41D9A444400009909 /* LoginAndRegist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E52D31D9A444400009909 /* LoginAndRegist.storyboard */; };
 		C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52D71D9A47D400009909 /* UIViewController+TRExtension.m */; };
+		C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52DB1D9A4D0F00009909 /* TRNavigationController.m */; };
+		C27E52DF1D9A4FBE00009909 /* TRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52DE1D9A4FBE00009909 /* TRLoginViewController.m */; };
+		C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52E11D9A563E00009909 /* UIBarButtonItem+GFExtension.m */; };
+		C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52E31D9A563E00009909 /* UIView+GFExtension.m */; };
+		C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */; };
+		C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53751D9A765900009909 /* TRRegistViewController.m */; };
 		C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */; };
 		C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */; };
 /* End PBXBuildFile section */
@@ -58,6 +64,18 @@
 		C27E52D31D9A444400009909 /* LoginAndRegist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegist.storyboard; sourceTree = "<group>"; };
 		C27E52D61D9A47D400009909 /* UIViewController+TRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TRExtension.h"; sourceTree = "<group>"; };
 		C27E52D71D9A47D400009909 /* UIViewController+TRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TRExtension.m"; sourceTree = "<group>"; };
+		C27E52DA1D9A4D0F00009909 /* TRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNavigationController.h; sourceTree = "<group>"; };
+		C27E52DB1D9A4D0F00009909 /* TRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNavigationController.m; sourceTree = "<group>"; };
+		C27E52DD1D9A4FBE00009909 /* TRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRLoginViewController.h; sourceTree = "<group>"; };
+		C27E52DE1D9A4FBE00009909 /* TRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRLoginViewController.m; sourceTree = "<group>"; };
+		C27E52E01D9A563E00009909 /* UIBarButtonItem+GFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GFExtension.h"; sourceTree = "<group>"; };
+		C27E52E11D9A563E00009909 /* UIBarButtonItem+GFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GFExtension.m"; sourceTree = "<group>"; };
+		C27E52E21D9A563E00009909 /* UIView+GFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GFExtension.h"; sourceTree = "<group>"; };
+		C27E52E31D9A563E00009909 /* UIView+GFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GFExtension.m"; sourceTree = "<group>"; };
+		C27E53711D9A73FD00009909 /* TRLoginAndRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRLoginAndRegistViewController.h; sourceTree = "<group>"; };
+		C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRLoginAndRegistViewController.m; sourceTree = "<group>"; };
+		C27E53741D9A765900009909 /* TRRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegistViewController.h; sourceTree = "<group>"; };
+		C27E53751D9A765900009909 /* TRRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegistViewController.m; sourceTree = "<group>"; };
 		C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainViewController.h; sourceTree = "<group>"; };
 		C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainViewController.m; sourceTree = "<group>"; };
 		C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGuideViewController.h; sourceTree = "<group>"; };
@@ -205,6 +223,12 @@
 			children = (
 				C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */,
 				C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */,
+				C27E52DD1D9A4FBE00009909 /* TRLoginViewController.h */,
+				C27E52DE1D9A4FBE00009909 /* TRLoginViewController.m */,
+				C27E53711D9A73FD00009909 /* TRLoginAndRegistViewController.h */,
+				C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */,
+				C27E53741D9A765900009909 /* TRRegistViewController.h */,
+				C27E53751D9A765900009909 /* TRRegistViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +315,7 @@
 		C22AC0491D9277240066A501 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C27E52D91D9A4CE000009909 /* Controller */,
 				C27E52D51D9A479100009909 /* Category */,
 				C22AC04A1D9277240066A501 /* AppDelegate.h */,
 				C22AC04B1D9277240066A501 /* AppDelegate.m */,
@@ -304,10 +329,23 @@
 		C27E52D51D9A479100009909 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C27E52E01D9A563E00009909 /* UIBarButtonItem+GFExtension.h */,
+				C27E52E11D9A563E00009909 /* UIBarButtonItem+GFExtension.m */,
+				C27E52E21D9A563E00009909 /* UIView+GFExtension.h */,
+				C27E52E31D9A563E00009909 /* UIView+GFExtension.m */,
 				C27E52D61D9A47D400009909 /* UIViewController+TRExtension.h */,
 				C27E52D71D9A47D400009909 /* UIViewController+TRExtension.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		C27E52D91D9A4CE000009909 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C27E52DA1D9A4D0F00009909 /* TRNavigationController.h */,
+				C27E52DB1D9A4D0F00009909 /* TRNavigationController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,8 +483,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27E52DF1D9A4FBE00009909 /* TRLoginViewController.m in Sources */,
+				C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */,
+				C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
 				C22AC04E1D9277240066A501 /* main.m in Sources */,
+				C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */,
+				C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */,
+				C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */,
 				C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */,
 				C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */,
 				C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */,

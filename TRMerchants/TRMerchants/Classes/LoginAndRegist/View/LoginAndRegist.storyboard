@@ -86,6 +86,100 @@
             </objects>
             <point key="canvasLocation" x="-335" y="-48"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Oaf-FE-JgR">
+            <objects>
+                <viewController storyboardIdentifier="TRLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kBG-MY-Qpv" customClass="TRLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MGB-2N-HLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="9AX-Vg-6Ax"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="liS-Om-3e0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uuz-GQ-yQg">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EHT-bP-nbZ">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EHT-bP-nbZ" firstAttribute="top" secondItem="uuz-GQ-yQg" secondAttribute="bottom" constant="30" id="1LD-0f-Djm"/>
+                            <constraint firstItem="uuz-GQ-yQg" firstAttribute="centerX" secondItem="liS-Om-3e0" secondAttribute="centerX" id="WYE-Cz-tmb"/>
+                            <constraint firstItem="uuz-GQ-yQg" firstAttribute="top" secondItem="MGB-2N-HLe" secondAttribute="bottom" constant="50" id="cKp-30-W6K"/>
+                            <constraint firstItem="uuz-GQ-yQg" firstAttribute="width" secondItem="liS-Om-3e0" secondAttribute="width" multiplier="0.6" id="hhM-W1-5F4"/>
+                            <constraint firstItem="EHT-bP-nbZ" firstAttribute="centerX" secondItem="liS-Om-3e0" secondAttribute="centerX" id="k8X-b3-val"/>
+                            <constraint firstItem="EHT-bP-nbZ" firstAttribute="width" secondItem="liS-Om-3e0" secondAttribute="width" multiplier="0.6" id="xw5-nX-dja"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BJ8-cI-cse"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfT-v3-xYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421.5999999999999" y="-32.833583208395808"/>
+        </scene>
+        <!--Regist View Controller-->
+        <scene sceneID="jgo-tQ-Wbi">
+            <objects>
+                <viewController id="rlB-Ug-W2j" customClass="TRRegistViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YvK-70-cu2"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1t-pp-aB6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FTj-rG-VAz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7lF-iq-4Nl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMZ-09-FL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3125.5999999999999" y="-17.541229385307346"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="30R-9M-6pY">
+            <objects>
+                <navigationController storyboardIdentifier="login" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zhC-5C-B8s" customClass="TRNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wX3-nb-xPW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kBG-MY-Qpv" kind="relationship" relationship="rootViewController" id="CPu-Om-kHV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rB-It-vyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482.39999999999998" y="-32.833583208395808"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LgY-dY-WYn">
+            <objects>
+                <navigationController storyboardIdentifier="regist" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6oG-8O-XdH" customClass="TRNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SoM-9u-Huy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rlB-Ug-W2j" kind="relationship" relationship="rootViewController" id="Ofi-48-Gge"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKP-D7-yGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186.4000000000001" y="-17.541229385307346"/>
+        </scene>
     </scenes>
     <resources>
         <image name="login_bg" width="1242" height="2208"/>
