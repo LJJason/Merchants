@@ -68,7 +68,7 @@
 
 #pragma mark <登录/注册>
 - (void)login{
-    
+    [self.view endEditing:YES];
 }
 
 

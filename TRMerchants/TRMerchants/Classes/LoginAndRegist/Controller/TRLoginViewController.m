@@ -10,6 +10,7 @@
 #import "TRAccountTool.h"
 #import <SVProgressHUD.h>
 #import "TRAccount.h"
+#import "TRMainViewController.h"
 
 @interface TRLoginViewController ()
 
@@ -33,10 +34,11 @@
 //登录
 - (void)login
 {
+    [super login];
+    
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     
-    [self.view endEditing:YES];
     
     NSString *userName = self.userNameTextField.text;
     NSString *pwd = self.pwdTextField.text;
@@ -47,9 +49,11 @@
         
         
         [TRAccountTool loginWithPhoneNum:userName pwd:pwd success:^(TRLoginState state) {
-            NSLog(@"%zd", state);
+
             
+            TRMainViewController *main = [[TRMainViewController alloc] init];
             
+            [UIApplication sharedApplication].keyWindow.rootViewController = main;
             
             [SVProgressHUD dismiss];
         } failure:^(NSError *error) {
@@ -57,7 +61,7 @@
             
             [SVProgressHUD showErrorWithStatus:@"登录失败!请检查网络连接!"];
             
-            
+            [self dimiss];
         }];
     }else {
         [SVProgressHUD showErrorWithStatus:@"请输入账号或密码!"];
@@ -73,7 +77,7 @@
 //- (void)dealloc {
 //    TRLog(@"滚蛋");
 //}
-//延迟隐藏SVProgressHUD
+//延迟1.0秒隐藏SVProgressHUD
 - (void)dimiss{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [SVProgressHUD dismiss];

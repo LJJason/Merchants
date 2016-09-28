@@ -33,7 +33,14 @@ typedef enum {
  */
 + (TRAccount *)account;
 
-//用户登录
+/**
+ *  用户登录
+ *
+ *  @param phoneNum 账号
+ *  @param pwd      密码
+ *  @param success  成功回调
+ *  @param failure  失败回调
+ */
 + (void)loginWithPhoneNum:(NSString *)phoneNum pwd:(NSString *)pwd success:(void(^)(TRLoginState state))success failure:(void(^)(NSError *error))failure;
 
 @end
