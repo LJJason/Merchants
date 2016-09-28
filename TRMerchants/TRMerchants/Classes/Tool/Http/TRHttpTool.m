@@ -11,7 +11,7 @@
 @implementation TRHttpTool
 
 + (void)GET:(NSString *)urlStr parameters:(id)parameters success:(void (^)(id))success failure:(void (^)(NSError *))failure {
-    [self GET:urlStr parameters:parameters progress:nil success:^(id responseObject) {
+    [TRHttpTool GET:urlStr parameters:parameters progress:nil success:^(id responseObject) {
         if (success) {
             success(responseObject);
         }
@@ -23,7 +23,7 @@
 }
 
 + (void)POST:(NSString *)urlStr parameters:(id)parameters success:(void (^)(id))success failure:(void (^)(NSError *))failure {
-    [self POST:urlStr parameters:parameters progress:nil success:^(id responseObject) {
+    [TRHttpTool POST:urlStr parameters:parameters progress:nil success:^(id responseObject) {
         if (success) {
             success(responseObject);
         }

@@ -16,7 +16,8 @@
 #import "TRNavigationController.h"
 #import "UIView+GFExtension.h"
 #import "UIBarButtonItem+GFExtension.h"
-
+#import <MJExtension.h>
+#import "TRHttpTool.h"
 
 #ifdef DEBUG
 #define TRLog(...) NSLog(__VA_ARGS__)
