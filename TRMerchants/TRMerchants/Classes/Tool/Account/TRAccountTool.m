@@ -10,7 +10,7 @@
 #import "TRAccountParam.h"
 #import "TRAccount.h"
 
-#define LoginUrl @"http://localhost:8080/TRMerchants/login"
+#define LoginUrl @"http://oo/TRMerchants/login"
 #define TRAccountFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"account.data"]
 
 

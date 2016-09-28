@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "TRGuideViewController.h"
+#import "TRRootTool.h"
+
 
 @interface AppDelegate ()
 
@@ -20,9 +21,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:TRScreenBounds];
     
-    TRGuideViewController *trgVc = [TRGuideViewController instantiateInitialViewControllerWithStoryboardName:@"LoginAndRegist"];
-    
-    self.window.rootViewController = trgVc;
+    //选择根控制器
+    [TRRootTool chooseRootViewController:self.window];
     
     [self.window makeKeyAndVisible];
     

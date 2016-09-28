@@ -28,6 +28,7 @@
 		C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52E31D9A563E00009909 /* UIView+GFExtension.m */; };
 		C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */; };
 		C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53751D9A765900009909 /* TRRegistViewController.m */; };
+		C28E2C9B1D9C0E6D0070BAAE /* TRRootTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2C9A1D9C0E6D0070BAAE /* TRRootTool.m */; };
 		C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */; };
 		C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,8 @@
 		C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRLoginAndRegistViewController.m; sourceTree = "<group>"; };
 		C27E53741D9A765900009909 /* TRRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegistViewController.h; sourceTree = "<group>"; };
 		C27E53751D9A765900009909 /* TRRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegistViewController.m; sourceTree = "<group>"; };
+		C28E2C991D9C0E6D0070BAAE /* TRRootTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRootTool.h; sourceTree = "<group>"; };
+		C28E2C9A1D9C0E6D0070BAAE /* TRRootTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRootTool.m; sourceTree = "<group>"; };
 		C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainViewController.h; sourceTree = "<group>"; };
 		C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainViewController.m; sourceTree = "<group>"; };
 		C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGuideViewController.h; sourceTree = "<group>"; };
@@ -412,8 +415,18 @@
 			children = (
 				C263F9101D9B9D8F00FF8BC4 /* Account */,
 				C263F90C1D9B9B4200FF8BC4 /* Http */,
+				C28E2C981D9C0E590070BAAE /* Root */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		C28E2C981D9C0E590070BAAE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C28E2C991D9C0E6D0070BAAE /* TRRootTool.h */,
+				C28E2C9A1D9C0E6D0070BAAE /* TRRootTool.m */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		D99651BEB2C18CA596675C77 /* Frameworks */ = {
@@ -626,6 +639,7 @@
 				C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */,
 				C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */,
 				C263F91A1D9B9DDA00FF8BC4 /* TRAccountParam.m in Sources */,
+				C28E2C9B1D9C0E6D0070BAAE /* TRRootTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
