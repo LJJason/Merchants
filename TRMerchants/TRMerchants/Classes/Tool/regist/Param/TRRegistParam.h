@@ -10,7 +10,7 @@
 
 @interface TRRegistParam : TRGetVcCodeParam
 
-/** 密码啊 */
+/** 密码 */
 @property (nonatomic, copy) NSString *pwd;
 
 /** 验证码 */

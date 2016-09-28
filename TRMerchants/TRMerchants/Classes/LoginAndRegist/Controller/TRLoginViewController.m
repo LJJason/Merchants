@@ -27,8 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    TRAccount *account = [TRAccountTool account];
-    NSLog(@"%@", account.uid);
 }
 
 //登录

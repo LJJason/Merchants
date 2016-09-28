@@ -31,7 +31,13 @@ typedef enum {
 
 @interface TRRegistTool : NSObject
 
-
+/**
+ *  获取验证码
+ *
+ *  @param param   验证码参数模型
+ *  @param success 成功回调
+ *  @param failure 失败回调
+ */
 + (void)getVcCodeWithParam:(TRGetVcCodeParam *)param
                    success:(void(^)(TRGetVcCodeState state))success
                    failure:(void(^)(NSError *error))failure;
@@ -39,7 +45,7 @@ typedef enum {
 /**
  *  注册
  *
- *  @param param   注册参数
+ *  @param param   注册参数模型
  *  @param success 成功回调
  *  @param failure 失败回调
  */
