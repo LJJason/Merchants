@@ -7,6 +7,7 @@
 //
 
 #import "TRLoginViewController.h"
+#import "TRAccountTool.h"
 
 @interface TRLoginViewController ()
 
@@ -29,7 +30,11 @@
 //登录
 - (void)login
 {
-    
+    [TRAccountTool loginWithPhoneNum:self.userNameTextField.text pwd:self.pwdTextField.text success:^(TRLoginState state) {
+        NSLog(@"%zd", state);
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 

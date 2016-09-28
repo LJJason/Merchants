@@ -7,6 +7,13 @@
 //  专门处理账号业务
 
 #import <Foundation/Foundation.h>
+
+typedef enum {
+    TRLoginStatePwdMistake      = 0,//密码错误
+    TRLoginStateOK              = 1,//登录成功
+    TRLoginStateAccountNotExist = 2 //用户不存在
+}TRLoginState;
+
 @class TRAccount;
 
 
@@ -27,6 +34,6 @@
 + (TRAccount *)account;
 
 //用户登录
-+ (void)accountWithPhoneNum:(NSString *)phoneNum pwd:(NSString *)pwd success:(void(^)())success failure:(void(^)(NSError *error))failure;
++ (void)loginWithPhoneNum:(NSString *)phoneNum pwd:(NSString *)pwd success:(void(^)(TRLoginState state))success failure:(void(^)(NSError *error))failure;
 
 @end
