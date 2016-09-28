@@ -16,6 +16,7 @@
 		C22AC02B1D9273A40066A501 /* TRMerchantsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC02A1D9273A40066A501 /* TRMerchantsUITests.m */; };
 		C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC04B1D9277240066A501 /* AppDelegate.m */; };
 		C22AC04E1D9277240066A501 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC04C1D9277240066A501 /* main.m */; };
+		C263F90F1D9B9B4200FF8BC4 /* TRHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C263F90E1D9B9B4200FF8BC4 /* TRHttpTool.m */; };
 		C27E52D41D9A444400009909 /* LoginAndRegist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E52D31D9A444400009909 /* LoginAndRegist.storyboard */; };
 		C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52D71D9A47D400009909 /* UIViewController+TRExtension.m */; };
 		C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52DB1D9A4D0F00009909 /* TRNavigationController.m */; };
@@ -24,7 +25,6 @@
 		C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E52E31D9A563E00009909 /* UIView+GFExtension.m */; };
 		C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */; };
 		C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53751D9A765900009909 /* TRRegistViewController.m */; };
-		C28C353E1D9B4F62002D8745 /* TRHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C28C353D1D9B4F62002D8745 /* TRHttpTool.m */; };
 		C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */; };
 		C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +64,8 @@
 		C22AC04A1D9277240066A501 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C22AC04B1D9277240066A501 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C22AC04C1D9277240066A501 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C263F90D1D9B9B4200FF8BC4 /* TRHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHttpTool.h; sourceTree = "<group>"; };
+		C263F90E1D9B9B4200FF8BC4 /* TRHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHttpTool.m; sourceTree = "<group>"; };
 		C27E52D21D9A42A300009909 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C27E52D31D9A444400009909 /* LoginAndRegist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegist.storyboard; sourceTree = "<group>"; };
 		C27E52D61D9A47D400009909 /* UIViewController+TRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TRExtension.h"; sourceTree = "<group>"; };
@@ -80,8 +82,6 @@
 		C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRLoginAndRegistViewController.m; sourceTree = "<group>"; };
 		C27E53741D9A765900009909 /* TRRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegistViewController.h; sourceTree = "<group>"; };
 		C27E53751D9A765900009909 /* TRRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegistViewController.m; sourceTree = "<group>"; };
-		C28C353C1D9B4F62002D8745 /* TRHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHttpTool.h; sourceTree = "<group>"; };
-		C28C353D1D9B4F62002D8745 /* TRHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHttpTool.m; sourceTree = "<group>"; };
 		C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainViewController.h; sourceTree = "<group>"; };
 		C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainViewController.m; sourceTree = "<group>"; };
 		C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGuideViewController.h; sourceTree = "<group>"; };
@@ -346,6 +346,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		C263F90C1D9B9B4200FF8BC4 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				C263F90D1D9B9B4200FF8BC4 /* TRHttpTool.h */,
+				C263F90E1D9B9B4200FF8BC4 /* TRHttpTool.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		C27E52D51D9A479100009909 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,18 +380,9 @@
 		C28C353A1D9B4F2F002D8745 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				C28C353B1D9B4F2F002D8745 /* HttpTool */,
+				C263F90C1D9B9B4200FF8BC4 /* Http */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		C28C353B1D9B4F2F002D8745 /* HttpTool */ = {
-			isa = PBXGroup;
-			children = (
-				C28C353C1D9B4F62002D8745 /* TRHttpTool.h */,
-				C28C353D1D9B4F62002D8745 /* TRHttpTool.m */,
-			);
-			path = HttpTool;
 			sourceTree = "<group>";
 		};
 		D99651BEB2C18CA596675C77 /* Frameworks */ = {
@@ -587,7 +587,7 @@
 				C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */,
 				C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */,
 				C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */,
-				C28C353E1D9B4F62002D8745 /* TRHttpTool.m in Sources */,
+				C263F90F1D9B9B4200FF8BC4 /* TRHttpTool.m in Sources */,
 				C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */,
 				C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */,
 				C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */,
