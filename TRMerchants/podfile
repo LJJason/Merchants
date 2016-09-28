@@ -1,4 +1,5 @@
 target:TRMerchants do
 pod 'AFNetworking'
 pod 'MJExtension'
+pod 'SVProgressHUD'
 end
