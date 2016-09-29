@@ -32,6 +32,16 @@
  */
 @property (weak, nonatomic) IBOutlet UIButton *vcCodeButton;
 
+/** 按钮状态标记 */
+@property (nonatomic, assign) BOOL flag;
+
+
+/** 定时器 */
+@property (nonatomic, strong) NSTimer *timer;
+
+/** 倒计时索引 */
+@property (nonatomic, assign) NSInteger index;
+
 @end
 
 @implementation TRRegistViewController
@@ -40,14 +50,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.index = 60;
 }
 /**
  *  获取验证码
  */
 - (IBAction)getVerificationCode {
-    
-    
+    if (!self.flag) {
+        self.index = 60;
+        [self.vcCodeButton setTitle:@"60秒后重新获取" forState:UIControlStateDisabled];
+        self.vcCodeButton.enabled = NO;
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countdown) userInfo:nil repeats:YES];
+        self.timer = timer;
+        
+        [self.vcCodeButton setBackgroundColor:[UIColor lightGrayColor]];
+
+    }
     
 }
 
@@ -56,6 +74,26 @@
  */
 - (void)login {
     [super login];
+    
+}
+
+/**
+ *  倒计时
+ */
+- (void)countdown {
+    self.index--;
+    if (self.index >= 0) {
+        NSString *title = [NSString stringWithFormat:@"%zd秒后重新获取", self.index];
+        [self.vcCodeButton setTitle:title forState:UIControlStateDisabled];
+//        [self.vcCodeButton setBackgroundColor:[UIColor lightGrayColor]];
+    }else {
+        //停止定时器
+        [self.timer invalidate];
+        self.timer = nil;
+        self.vcCodeButton.enabled = YES;
+        [self.vcCodeButton setBackgroundColor:TRColor(0, 191, 248, 1.0)];
+    }
+    
     
 }
 
