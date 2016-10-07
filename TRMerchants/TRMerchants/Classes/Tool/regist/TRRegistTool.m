@@ -26,14 +26,19 @@
         TRGetVcCodeState state = TRGetVcCodeStateUnknownMistake;
         
         if ([ret isEqualToString:@"100"]) {
+            //验证码发送成功
             state = TRGetVcCodeStateOK;
         }else if ([ret isEqualToString:@"102"]){
+            //手机号格式不正确
             state = TRGetVcCodeStateInvalidFormat;
         }else if ([ret isEqualToString:@"108"]){
+            //手机号发送太频繁
             state = TRGetVcCodeStateTooOften;
         }else if ([ret isEqualToString:@"110"]){
+            //手机号发送短信太频繁, 被系统屏蔽数日
             state = TRGetVcCodeStateShielding;
         }else {
+            //未知错误
             state = TRGetVcCodeStateUnknownMistake;
         }
         
@@ -51,7 +56,7 @@
 + (void)registWithParam:(TRRegistParam *)param success:(void (^)(TRRegistState))success failure:(void (^)(NSError *))failure {
     [TRHttpTool POST:TRRegistUrl parameters:param.mj_keyValues success:^(id responseObject) {
         
-        NSString *ret = responseObject[@"state"];
+        NSString *ret = [responseObject[@"state"] stringValue];
         
         TRRegistState state = TRRegistStateVcCodeMistake;
         

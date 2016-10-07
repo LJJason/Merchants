@@ -10,4 +10,6 @@
 
 @interface TRGuideViewController : UIViewController
 
+- (IBAction)login;
+
 @end

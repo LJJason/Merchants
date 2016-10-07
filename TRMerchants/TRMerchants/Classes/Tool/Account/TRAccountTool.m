@@ -10,7 +10,7 @@
 #import "TRAccountParam.h"
 #import "TRAccount.h"
 
-#define LoginUrl @"http://oo/TRMerchants/login"
+#define LoginUrl @"http://localhost:8080/TRMerchants/login"
 #define TRAccountFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"account.data"]
 
 
@@ -24,7 +24,6 @@
     [TRHttpTool POST:LoginUrl parameters:param.mj_keyValues success:^(id responseObject) {
         
         NSString *uid = responseObject[@"uid"];
-        
         if ([uid isEqualToString:phoneNum]) {
             [TRAccountTool saveAccount:[TRAccount accountWithDict:responseObject]];
             

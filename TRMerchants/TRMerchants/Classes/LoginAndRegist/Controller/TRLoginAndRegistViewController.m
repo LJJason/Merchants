@@ -7,6 +7,7 @@
 //
 
 #import "TRLoginAndRegistViewController.h"
+#import "TRBackButton.h"
 
 @interface TRLoginAndRegistViewController ()
 
@@ -37,17 +38,18 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
     
     //创建导航条左边返回的按钮
-    UIButton *button = [[UIButton alloc] init];
-    [button setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
-    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [button setTitle:@"返回" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-    [button addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
-    button.bounds = CGRectMake(0, 0, 70, 30);
-    button.contentEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0);
-    button.titleLabel.font = [UIFont systemFontOfSize:15];
+//    UIButton *button = [[UIButton alloc] init];
+//    [button setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
+//    [button setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
+//    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+//    [button setTitle:@"返回" forState:UIControlStateNormal];
+//    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [button setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+//    [button addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
+//    button.bounds = CGRectMake(0, 0, 70, 30);
+//    button.contentEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0);
+//    button.titleLabel.font = [UIFont systemFontOfSize:15];
+    TRBackButton *button = [TRBackButton backButtonWithTarget:self action:@selector(cancel)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 

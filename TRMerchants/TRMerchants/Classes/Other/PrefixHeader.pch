@@ -18,6 +18,9 @@
 #import "UIBarButtonItem+GFExtension.h"
 #import <MJExtension.h>
 #import "TRHttpTool.h"
+#import "Utilities.h"
+#import "Toast.h"
+#import "TRProgressTool.h"
 
 #ifdef DEBUG
 #define TRLog(...) NSLog(__VA_ARGS__)

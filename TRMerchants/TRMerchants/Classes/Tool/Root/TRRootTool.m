@@ -18,7 +18,7 @@
 {
     if ([TRAccountTool account]) {//已经登录过
         
-        TRMainViewController *main = [[TRMainViewController alloc] init];
+        TRMainViewController *main = [TRMainViewController viewControllerWtithMainStoryboardIdentifier:@"TRMainViewController"];
         
         window.rootViewController = main;
     }else {   // 没有登录

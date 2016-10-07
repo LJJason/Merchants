@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		67B5B989C796FEA8A6FF283A /* libPods-TRMerchants.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0493DAE880C2A972B6143 /* libPods-TRMerchants.a */; };
-		C22AC00D1D9273A40066A501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC00B1D9273A40066A501 /* Main.storyboard */; };
+		C20EF54C1DA7724B00E2F59F /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF54B1DA7724B00E2F59F /* Toast.m */; };
+		C20EF5501DA781AF00E2F59F /* TRProgressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF54F1DA781AF00E2F59F /* TRProgressTool.m */; };
+		C20EF5531DA78A5B00E2F59F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5521DA78A5B00E2F59F /* Main.storyboard */; };
+		C20EF5561DA78CCE00E2F59F /* TRGoodsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5551DA78CCE00E2F59F /* TRGoodsTableViewController.m */; };
+		C20EF5581DA78CF500E2F59F /* Goods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5571DA78CF500E2F59F /* Goods.storyboard */; };
+		C20EF55C1DA78FDF00E2F59F /* TRBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF55B1DA78FDF00E2F59F /* TRBackButton.m */; };
+		C20EF55F1DA79C9E00E2F59F /* TRAddRoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF55E1DA79C9E00E2F59F /* TRAddRoomsViewController.m */; };
+		C20EF5621DA7A3CD00E2F59F /* TRSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5611DA7A3CD00E2F59F /* TRSettingTableViewController.m */; };
+		C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F56831D9DF3F5005594A9 /* Utilities.m */; };
 		C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */; };
 		C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0111D9273A40066A501 /* Assets.xcassets */; };
 		C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */; };
@@ -56,8 +64,23 @@
 /* Begin PBXFileReference section */
 		5AEAD10619A901C968458990 /* Pods-TRMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMerchants.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		96BBC9224893D5FDB25D09C5 /* Pods-TRMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMerchants.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants.release.xcconfig"; sourceTree = "<group>"; };
+		C20EF54A1DA7724B00E2F59F /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		C20EF54B1DA7724B00E2F59F /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		C20EF54E1DA781AF00E2F59F /* TRProgressTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRProgressTool.h; sourceTree = "<group>"; };
+		C20EF54F1DA781AF00E2F59F /* TRProgressTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRProgressTool.m; sourceTree = "<group>"; };
+		C20EF5521DA78A5B00E2F59F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C20EF5541DA78CCE00E2F59F /* TRGoodsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGoodsTableViewController.h; sourceTree = "<group>"; };
+		C20EF5551DA78CCE00E2F59F /* TRGoodsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGoodsTableViewController.m; sourceTree = "<group>"; };
+		C20EF5571DA78CF500E2F59F /* Goods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Goods.storyboard; sourceTree = "<group>"; };
+		C20EF55A1DA78FDF00E2F59F /* TRBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBackButton.h; sourceTree = "<group>"; };
+		C20EF55B1DA78FDF00E2F59F /* TRBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBackButton.m; sourceTree = "<group>"; };
+		C20EF55D1DA79C9E00E2F59F /* TRAddRoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAddRoomsViewController.h; sourceTree = "<group>"; };
+		C20EF55E1DA79C9E00E2F59F /* TRAddRoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAddRoomsViewController.m; sourceTree = "<group>"; };
+		C20EF5601DA7A3CD00E2F59F /* TRSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingTableViewController.h; sourceTree = "<group>"; };
+		C20EF5611DA7A3CD00E2F59F /* TRSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingTableViewController.m; sourceTree = "<group>"; };
+		C21F56821D9DF3F5005594A9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		C21F56831D9DF3F5005594A9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		C22ABFFF1D9273A40066A501 /* TRMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C22AC00C1D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRMerchants.xcdatamodel; sourceTree = "<group>"; };
 		C22AC0111D9273A40066A501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22AC0141D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,6 +168,43 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C20EF54D1DA7817F00E2F59F /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF54E1DA781AF00E2F59F /* TRProgressTool.h */,
+				C20EF54F1DA781AF00E2F59F /* TRProgressTool.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		C20EF5511DA78A5B00E2F59F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF5521DA78A5B00E2F59F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C20EF5591DA78FC900E2F59F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF55A1DA78FDF00E2F59F /* TRBackButton.h */,
+				C20EF55B1DA78FDF00E2F59F /* TRBackButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C21F56811D9DF3E6005594A9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF54A1DA7724B00E2F59F /* Toast.h */,
+				C20EF54B1DA7724B00E2F59F /* Toast.m */,
+				C21F56821D9DF3F5005594A9 /* Utilities.h */,
+				C21F56831D9DF3F5005594A9 /* Utilities.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		C22ABFF61D9273A40066A501 = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				C22AC0381D9277240066A501 /* Classes */,
-				C22AC00B1D9273A40066A501 /* Main.storyboard */,
 				C22AC0111D9273A40066A501 /* Assets.xcassets */,
 				C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */,
 				C22AC0021D9273A40066A501 /* Supporting Files */,
@@ -208,6 +267,7 @@
 		C22AC0381D9277240066A501 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C21F56811D9DF3E6005594A9 /* Lib */,
 				C28C353A1D9B4F2F002D8745 /* Tool */,
 				C22AC0391D9277240066A501 /* Goods */,
 				C22AC03D1D9277240066A501 /* LoginAndRegist */,
@@ -231,6 +291,10 @@
 		C22AC03A1D9277240066A501 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF5541DA78CCE00E2F59F /* TRGoodsTableViewController.h */,
+				C20EF5551DA78CCE00E2F59F /* TRGoodsTableViewController.m */,
+				C20EF55D1DA79C9E00E2F59F /* TRAddRoomsViewController.h */,
+				C20EF55E1DA79C9E00E2F59F /* TRAddRoomsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +309,7 @@
 		C22AC03C1D9277240066A501 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF5571DA78CF500E2F59F /* Goods.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,7 +361,7 @@
 			children = (
 				C22AC0421D9277240066A501 /* Controller */,
 				C22AC0431D9277240066A501 /* Model */,
-				C22AC0441D9277240066A501 /* View */,
+				C20EF5511DA78A5B00E2F59F /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -306,6 +371,8 @@
 			children = (
 				C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */,
 				C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */,
+				C20EF5601DA7A3CD00E2F59F /* TRSettingTableViewController.h */,
+				C20EF5611DA7A3CD00E2F59F /* TRSettingTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,13 +382,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C22AC0441D9277240066A501 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C22AC0451D9277240066A501 /* Order */ = {
@@ -358,6 +418,7 @@
 		C22AC0491D9277240066A501 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF5591DA78FC900E2F59F /* View */,
 				C27E52D91D9A4CE000009909 /* Controller */,
 				C27E52D51D9A479100009909 /* Category */,
 				C22AC04A1D9277240066A501 /* AppDelegate.h */,
@@ -422,6 +483,7 @@
 		C28C353A1D9B4F2F002D8745 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF54D1DA7817F00E2F59F /* HUD */,
 				C263F9101D9B9D8F00FF8BC4 /* Account */,
 				C263F90C1D9B9B4200FF8BC4 /* Http */,
 				C28E2C981D9C0E590070BAAE /* Root */,
@@ -580,8 +642,9 @@
 			files = (
 				C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */,
 				C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */,
+				C20EF5581DA78CF500E2F59F /* Goods.storyboard in Resources */,
 				C27E52D41D9A444400009909 /* LoginAndRegist.storyboard in Resources */,
-				C22AC00D1D9273A40066A501 /* Main.storyboard in Resources */,
+				C20EF5531DA78A5B00E2F59F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,24 +717,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20EF5561DA78CCE00E2F59F /* TRGoodsTableViewController.m in Sources */,
 				C27E52DF1D9A4FBE00009909 /* TRLoginViewController.m in Sources */,
 				C263F9171D9B9DB200FF8BC4 /* TRAccount.m in Sources */,
+				C20EF55F1DA79C9E00E2F59F /* TRAddRoomsViewController.m in Sources */,
 				C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */,
 				C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
 				C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */,
+				C20EF5501DA781AF00E2F59F /* TRProgressTool.m in Sources */,
 				C22AC04E1D9277240066A501 /* main.m in Sources */,
 				C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */,
 				C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */,
 				C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */,
 				C263F90F1D9B9B4200FF8BC4 /* TRHttpTool.m in Sources */,
 				C263F9141D9B9DA300FF8BC4 /* TRAccountTool.m in Sources */,
+				C20EF55C1DA78FDF00E2F59F /* TRBackButton.m in Sources */,
+				C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */,
 				C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */,
 				C28E2CA91D9C1DB90070BAAE /* TRGetVcCodeParam.m in Sources */,
 				C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */,
 				C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */,
+				C20EF54C1DA7724B00E2F59F /* Toast.m in Sources */,
 				C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */,
 				C263F91A1D9B9DDA00FF8BC4 /* TRAccountParam.m in Sources */,
+				C20EF5621DA7A3CD00E2F59F /* TRSettingTableViewController.m in Sources */,
 				C28E2C9B1D9C0E6D0070BAAE /* TRRootTool.m in Sources */,
 				C28E2CAC1D9C1DD20070BAAE /* TRRegistParam.m in Sources */,
 			);
@@ -709,14 +779,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C22AC00B1D9273A40066A501 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C22AC00C1D9273A40066A501 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
