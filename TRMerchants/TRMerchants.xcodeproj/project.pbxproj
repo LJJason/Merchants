@@ -16,6 +16,35 @@
 		C20EF55C1DA78FDF00E2F59F /* TRBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF55B1DA78FDF00E2F59F /* TRBackButton.m */; };
 		C20EF55F1DA79C9E00E2F59F /* TRAddRoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF55E1DA79C9E00E2F59F /* TRAddRoomsViewController.m */; };
 		C20EF5621DA7A3CD00E2F59F /* TRSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5611DA7A3CD00E2F59F /* TRSettingTableViewController.m */; };
+		C20EF5661DA7E32200E2F59F /* TRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5651DA7E32200E2F59F /* TRUser.m */; };
+		C20EF5691DA7E79900E2F59F /* TRAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5681DA7E79900E2F59F /* TRAuthorizationViewController.m */; };
+		C20EF56C1DA7EBC800E2F59F /* GFCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF56B1DA7EBC800E2F59F /* GFCollectionViewCell.m */; };
+		C20EF5951DA7EE8500E2F59F /* AlbumDataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF56F1DA7EE8500E2F59F /* AlbumDataHandle.m */; };
+		C20EF5961DA7EE8500E2F59F /* AlbumDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5711DA7EE8500E2F59F /* AlbumDataModel.m */; };
+		C20EF5971DA7EE8500E2F59F /* AlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5731DA7EE8500E2F59F /* AlbumListController.m */; };
+		C20EF5981DA7EE8500E2F59F /* AlbumListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5751DA7EE8500E2F59F /* AlbumListTableViewCell.m */; };
+		C20EF5991DA7EE8500E2F59F /* AlbumNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5771DA7EE8500E2F59F /* AlbumNavigationController.m */; };
+		C20EF59A1DA7EE8500E2F59F /* MMVideoPreviewPlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5791DA7EE8500E2F59F /* MMVideoPreviewPlay@2x.png */; };
+		C20EF59B1DA7EE8500E2F59F /* MMVideoPreviewPlayHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF57A1DA7EE8500E2F59F /* MMVideoPreviewPlayHL@2x.png */; };
+		C20EF59C1DA7EE8500E2F59F /* navi_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF57B1DA7EE8500E2F59F /* navi_back@2x.png */; };
+		C20EF59D1DA7EE8500E2F59F /* photo_def_photoPickerVc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF57C1DA7EE8500E2F59F /* photo_def_photoPickerVc@2x.png */; };
+		C20EF59E1DA7EE8500E2F59F /* photo_def_previewVc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF57D1DA7EE8500E2F59F /* photo_def_previewVc@2x.png */; };
+		C20EF59F1DA7EE8500E2F59F /* photo_number_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF57E1DA7EE8500E2F59F /* photo_number_icon@2x.png */; };
+		C20EF5A01DA7EE8500E2F59F /* photo_original_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF57F1DA7EE8500E2F59F /* photo_original_def@2x.png */; };
+		C20EF5A11DA7EE8500E2F59F /* photo_original_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5801DA7EE8500E2F59F /* photo_original_sel@2x.png */; };
+		C20EF5A21DA7EE8500E2F59F /* photo_sel_photoPickerVc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5811DA7EE8500E2F59F /* photo_sel_photoPickerVc@2x.png */; };
+		C20EF5A31DA7EE8500E2F59F /* photo_sel_previewVc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5821DA7EE8500E2F59F /* photo_sel_previewVc@2x.png */; };
+		C20EF5A41DA7EE8500E2F59F /* preview_number_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5831DA7EE8500E2F59F /* preview_number_icon@2x.png */; };
+		C20EF5A51DA7EE8500E2F59F /* preview_original_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5841DA7EE8500E2F59F /* preview_original_def@2x.png */; };
+		C20EF5A61DA7EE8500E2F59F /* TableViewArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5851DA7EE8500E2F59F /* TableViewArrow@2x.png */; };
+		C20EF5A71DA7EE8500E2F59F /* VideoSendIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5861DA7EE8500E2F59F /* VideoSendIcon@2x.png */; };
+		C20EF5A81DA7EE8500E2F59F /* PhotoPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5891DA7EE8500E2F59F /* PhotoPickerCell.m */; };
+		C20EF5A91DA7EE8500E2F59F /* PhotoPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20EF58A1DA7EE8500E2F59F /* PhotoPickerCell.xib */; };
+		C20EF5AA1DA7EE8500E2F59F /* PhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF58C1DA7EE8500E2F59F /* PhotoPickerController.m */; };
+		C20EF5AB1DA7EE8500E2F59F /* PhotoPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF58E1DA7EE8500E2F59F /* PhotoPickerModel.m */; };
+		C20EF5AC1DA7EE8500E2F59F /* PhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5901DA7EE8500E2F59F /* PhotoPreviewCell.m */; };
+		C20EF5AD1DA7EE8500E2F59F /* PhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5921DA7EE8500E2F59F /* PhotoPreviewController.m */; };
+		C20EF5AE1DA7EE8500E2F59F /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5941DA7EE8500E2F59F /* VideoPlayerController.m */; };
 		C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F56831D9DF3F5005594A9 /* Utilities.m */; };
 		C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */; };
 		C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0111D9273A40066A501 /* Assets.xcassets */; };
@@ -78,6 +107,50 @@
 		C20EF55E1DA79C9E00E2F59F /* TRAddRoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAddRoomsViewController.m; sourceTree = "<group>"; };
 		C20EF5601DA7A3CD00E2F59F /* TRSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingTableViewController.h; sourceTree = "<group>"; };
 		C20EF5611DA7A3CD00E2F59F /* TRSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingTableViewController.m; sourceTree = "<group>"; };
+		C20EF5641DA7E32200E2F59F /* TRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUser.h; sourceTree = "<group>"; };
+		C20EF5651DA7E32200E2F59F /* TRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUser.m; sourceTree = "<group>"; };
+		C20EF5671DA7E79900E2F59F /* TRAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAuthorizationViewController.h; sourceTree = "<group>"; };
+		C20EF5681DA7E79900E2F59F /* TRAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAuthorizationViewController.m; sourceTree = "<group>"; };
+		C20EF56A1DA7EBC800E2F59F /* GFCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCollectionViewCell.h; sourceTree = "<group>"; };
+		C20EF56B1DA7EBC800E2F59F /* GFCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFCollectionViewCell.m; sourceTree = "<group>"; };
+		C20EF56E1DA7EE8500E2F59F /* AlbumDataHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDataHandle.h; sourceTree = "<group>"; };
+		C20EF56F1DA7EE8500E2F59F /* AlbumDataHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDataHandle.m; sourceTree = "<group>"; };
+		C20EF5701DA7EE8500E2F59F /* AlbumDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDataModel.h; sourceTree = "<group>"; };
+		C20EF5711DA7EE8500E2F59F /* AlbumDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDataModel.m; sourceTree = "<group>"; };
+		C20EF5721DA7EE8500E2F59F /* AlbumListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumListController.h; sourceTree = "<group>"; };
+		C20EF5731DA7EE8500E2F59F /* AlbumListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListController.m; sourceTree = "<group>"; };
+		C20EF5741DA7EE8500E2F59F /* AlbumListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumListTableViewCell.h; sourceTree = "<group>"; };
+		C20EF5751DA7EE8500E2F59F /* AlbumListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumListTableViewCell.m; sourceTree = "<group>"; };
+		C20EF5761DA7EE8500E2F59F /* AlbumNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumNavigationController.h; sourceTree = "<group>"; };
+		C20EF5771DA7EE8500E2F59F /* AlbumNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumNavigationController.m; sourceTree = "<group>"; };
+		C20EF5791DA7EE8500E2F59F /* MMVideoPreviewPlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MMVideoPreviewPlay@2x.png"; sourceTree = "<group>"; };
+		C20EF57A1DA7EE8500E2F59F /* MMVideoPreviewPlayHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MMVideoPreviewPlayHL@2x.png"; sourceTree = "<group>"; };
+		C20EF57B1DA7EE8500E2F59F /* navi_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_back@2x.png"; sourceTree = "<group>"; };
+		C20EF57C1DA7EE8500E2F59F /* photo_def_photoPickerVc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_def_photoPickerVc@2x.png"; sourceTree = "<group>"; };
+		C20EF57D1DA7EE8500E2F59F /* photo_def_previewVc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_def_previewVc@2x.png"; sourceTree = "<group>"; };
+		C20EF57E1DA7EE8500E2F59F /* photo_number_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_number_icon@2x.png"; sourceTree = "<group>"; };
+		C20EF57F1DA7EE8500E2F59F /* photo_original_def@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_original_def@2x.png"; sourceTree = "<group>"; };
+		C20EF5801DA7EE8500E2F59F /* photo_original_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_original_sel@2x.png"; sourceTree = "<group>"; };
+		C20EF5811DA7EE8500E2F59F /* photo_sel_photoPickerVc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_sel_photoPickerVc@2x.png"; sourceTree = "<group>"; };
+		C20EF5821DA7EE8500E2F59F /* photo_sel_previewVc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_sel_previewVc@2x.png"; sourceTree = "<group>"; };
+		C20EF5831DA7EE8500E2F59F /* preview_number_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preview_number_icon@2x.png"; sourceTree = "<group>"; };
+		C20EF5841DA7EE8500E2F59F /* preview_original_def@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preview_original_def@2x.png"; sourceTree = "<group>"; };
+		C20EF5851DA7EE8500E2F59F /* TableViewArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TableViewArrow@2x.png"; sourceTree = "<group>"; };
+		C20EF5861DA7EE8500E2F59F /* VideoSendIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoSendIcon@2x.png"; sourceTree = "<group>"; };
+		C20EF5871DA7EE8500E2F59F /* MediaType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaType.h; sourceTree = "<group>"; };
+		C20EF5881DA7EE8500E2F59F /* PhotoPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPickerCell.h; sourceTree = "<group>"; };
+		C20EF5891DA7EE8500E2F59F /* PhotoPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerCell.m; sourceTree = "<group>"; };
+		C20EF58A1DA7EE8500E2F59F /* PhotoPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoPickerCell.xib; sourceTree = "<group>"; };
+		C20EF58B1DA7EE8500E2F59F /* PhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPickerController.h; sourceTree = "<group>"; };
+		C20EF58C1DA7EE8500E2F59F /* PhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerController.m; sourceTree = "<group>"; };
+		C20EF58D1DA7EE8500E2F59F /* PhotoPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPickerModel.h; sourceTree = "<group>"; };
+		C20EF58E1DA7EE8500E2F59F /* PhotoPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPickerModel.m; sourceTree = "<group>"; };
+		C20EF58F1DA7EE8500E2F59F /* PhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPreviewCell.h; sourceTree = "<group>"; };
+		C20EF5901DA7EE8500E2F59F /* PhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPreviewCell.m; sourceTree = "<group>"; };
+		C20EF5911DA7EE8500E2F59F /* PhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoPreviewController.h; sourceTree = "<group>"; };
+		C20EF5921DA7EE8500E2F59F /* PhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPreviewController.m; sourceTree = "<group>"; };
+		C20EF5931DA7EE8500E2F59F /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
+		C20EF5941DA7EE8500E2F59F /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
 		C21F56821D9DF3F5005594A9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		C21F56831D9DF3F5005594A9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		C22ABFFF1D9273A40066A501 /* TRMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +253,8 @@
 		C20EF5511DA78A5B00E2F59F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF56A1DA7EBC800E2F59F /* GFCollectionViewCell.h */,
+				C20EF56B1DA7EBC800E2F59F /* GFCollectionViewCell.m */,
 				C20EF5521DA78A5B00E2F59F /* Main.storyboard */,
 			);
 			path = View;
@@ -194,9 +269,72 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C20EF5631DA7E31100E2F59F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF5641DA7E32200E2F59F /* TRUser.h */,
+				C20EF5651DA7E32200E2F59F /* TRUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C20EF56D1DA7EE8500E2F59F /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF56E1DA7EE8500E2F59F /* AlbumDataHandle.h */,
+				C20EF56F1DA7EE8500E2F59F /* AlbumDataHandle.m */,
+				C20EF5701DA7EE8500E2F59F /* AlbumDataModel.h */,
+				C20EF5711DA7EE8500E2F59F /* AlbumDataModel.m */,
+				C20EF5721DA7EE8500E2F59F /* AlbumListController.h */,
+				C20EF5731DA7EE8500E2F59F /* AlbumListController.m */,
+				C20EF5741DA7EE8500E2F59F /* AlbumListTableViewCell.h */,
+				C20EF5751DA7EE8500E2F59F /* AlbumListTableViewCell.m */,
+				C20EF5761DA7EE8500E2F59F /* AlbumNavigationController.h */,
+				C20EF5771DA7EE8500E2F59F /* AlbumNavigationController.m */,
+				C20EF5781DA7EE8500E2F59F /* Images */,
+				C20EF5871DA7EE8500E2F59F /* MediaType.h */,
+				C20EF5881DA7EE8500E2F59F /* PhotoPickerCell.h */,
+				C20EF5891DA7EE8500E2F59F /* PhotoPickerCell.m */,
+				C20EF58A1DA7EE8500E2F59F /* PhotoPickerCell.xib */,
+				C20EF58B1DA7EE8500E2F59F /* PhotoPickerController.h */,
+				C20EF58C1DA7EE8500E2F59F /* PhotoPickerController.m */,
+				C20EF58D1DA7EE8500E2F59F /* PhotoPickerModel.h */,
+				C20EF58E1DA7EE8500E2F59F /* PhotoPickerModel.m */,
+				C20EF58F1DA7EE8500E2F59F /* PhotoPreviewCell.h */,
+				C20EF5901DA7EE8500E2F59F /* PhotoPreviewCell.m */,
+				C20EF5911DA7EE8500E2F59F /* PhotoPreviewController.h */,
+				C20EF5921DA7EE8500E2F59F /* PhotoPreviewController.m */,
+				C20EF5931DA7EE8500E2F59F /* VideoPlayerController.h */,
+				C20EF5941DA7EE8500E2F59F /* VideoPlayerController.m */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		C20EF5781DA7EE8500E2F59F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C20EF5791DA7EE8500E2F59F /* MMVideoPreviewPlay@2x.png */,
+				C20EF57A1DA7EE8500E2F59F /* MMVideoPreviewPlayHL@2x.png */,
+				C20EF57B1DA7EE8500E2F59F /* navi_back@2x.png */,
+				C20EF57C1DA7EE8500E2F59F /* photo_def_photoPickerVc@2x.png */,
+				C20EF57D1DA7EE8500E2F59F /* photo_def_previewVc@2x.png */,
+				C20EF57E1DA7EE8500E2F59F /* photo_number_icon@2x.png */,
+				C20EF57F1DA7EE8500E2F59F /* photo_original_def@2x.png */,
+				C20EF5801DA7EE8500E2F59F /* photo_original_sel@2x.png */,
+				C20EF5811DA7EE8500E2F59F /* photo_sel_photoPickerVc@2x.png */,
+				C20EF5821DA7EE8500E2F59F /* photo_sel_previewVc@2x.png */,
+				C20EF5831DA7EE8500E2F59F /* preview_number_icon@2x.png */,
+				C20EF5841DA7EE8500E2F59F /* preview_original_def@2x.png */,
+				C20EF5851DA7EE8500E2F59F /* TableViewArrow@2x.png */,
+				C20EF5861DA7EE8500E2F59F /* VideoSendIcon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		C21F56811D9DF3E6005594A9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF56D1DA7EE8500E2F59F /* Album */,
 				C20EF54A1DA7724B00E2F59F /* Toast.h */,
 				C20EF54B1DA7724B00E2F59F /* Toast.m */,
 				C21F56821D9DF3F5005594A9 /* Utilities.h */,
@@ -373,6 +511,8 @@
 				C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */,
 				C20EF5601DA7A3CD00E2F59F /* TRSettingTableViewController.h */,
 				C20EF5611DA7A3CD00E2F59F /* TRSettingTableViewController.m */,
+				C20EF5671DA7E79900E2F59F /* TRAuthorizationViewController.h */,
+				C20EF5681DA7E79900E2F59F /* TRAuthorizationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -418,6 +558,7 @@
 		C22AC0491D9277240066A501 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C20EF5631DA7E31100E2F59F /* Model */,
 				C20EF5591DA78FC900E2F59F /* View */,
 				C27E52D91D9A4CE000009909 /* Controller */,
 				C27E52D51D9A479100009909 /* Category */,
@@ -642,9 +783,24 @@
 			files = (
 				C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */,
 				C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */,
+				C20EF59B1DA7EE8500E2F59F /* MMVideoPreviewPlayHL@2x.png in Resources */,
+				C20EF5A31DA7EE8500E2F59F /* photo_sel_previewVc@2x.png in Resources */,
+				C20EF5A61DA7EE8500E2F59F /* TableViewArrow@2x.png in Resources */,
+				C20EF59C1DA7EE8500E2F59F /* navi_back@2x.png in Resources */,
 				C20EF5581DA78CF500E2F59F /* Goods.storyboard in Resources */,
 				C27E52D41D9A444400009909 /* LoginAndRegist.storyboard in Resources */,
+				C20EF5A91DA7EE8500E2F59F /* PhotoPickerCell.xib in Resources */,
+				C20EF5A21DA7EE8500E2F59F /* photo_sel_photoPickerVc@2x.png in Resources */,
+				C20EF59D1DA7EE8500E2F59F /* photo_def_photoPickerVc@2x.png in Resources */,
+				C20EF5A41DA7EE8500E2F59F /* preview_number_icon@2x.png in Resources */,
+				C20EF59E1DA7EE8500E2F59F /* photo_def_previewVc@2x.png in Resources */,
+				C20EF5A11DA7EE8500E2F59F /* photo_original_sel@2x.png in Resources */,
 				C20EF5531DA78A5B00E2F59F /* Main.storyboard in Resources */,
+				C20EF59A1DA7EE8500E2F59F /* MMVideoPreviewPlay@2x.png in Resources */,
+				C20EF5A01DA7EE8500E2F59F /* photo_original_def@2x.png in Resources */,
+				C20EF59F1DA7EE8500E2F59F /* photo_number_icon@2x.png in Resources */,
+				C20EF5A51DA7EE8500E2F59F /* preview_original_def@2x.png in Resources */,
+				C20EF5A71DA7EE8500E2F59F /* VideoSendIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,28 +874,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				C20EF5561DA78CCE00E2F59F /* TRGoodsTableViewController.m in Sources */,
+				C20EF5981DA7EE8500E2F59F /* AlbumListTableViewCell.m in Sources */,
 				C27E52DF1D9A4FBE00009909 /* TRLoginViewController.m in Sources */,
 				C263F9171D9B9DB200FF8BC4 /* TRAccount.m in Sources */,
 				C20EF55F1DA79C9E00E2F59F /* TRAddRoomsViewController.m in Sources */,
+				C20EF5AC1DA7EE8500E2F59F /* PhotoPreviewCell.m in Sources */,
 				C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */,
 				C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */,
+				C20EF5951DA7EE8500E2F59F /* AlbumDataHandle.m in Sources */,
+				C20EF5A81DA7EE8500E2F59F /* PhotoPickerCell.m in Sources */,
+				C20EF5961DA7EE8500E2F59F /* AlbumDataModel.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
 				C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */,
 				C20EF5501DA781AF00E2F59F /* TRProgressTool.m in Sources */,
 				C22AC04E1D9277240066A501 /* main.m in Sources */,
+				C20EF5AB1DA7EE8500E2F59F /* PhotoPickerModel.m in Sources */,
 				C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */,
 				C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */,
+				C20EF5AE1DA7EE8500E2F59F /* VideoPlayerController.m in Sources */,
+				C20EF5AA1DA7EE8500E2F59F /* PhotoPickerController.m in Sources */,
 				C27E52E51D9A563E00009909 /* UIView+GFExtension.m in Sources */,
 				C263F90F1D9B9B4200FF8BC4 /* TRHttpTool.m in Sources */,
 				C263F9141D9B9DA300FF8BC4 /* TRAccountTool.m in Sources */,
+				C20EF56C1DA7EBC800E2F59F /* GFCollectionViewCell.m in Sources */,
 				C20EF55C1DA78FDF00E2F59F /* TRBackButton.m in Sources */,
+				C20EF5661DA7E32200E2F59F /* TRUser.m in Sources */,
+				C20EF5991DA7EE8500E2F59F /* AlbumNavigationController.m in Sources */,
 				C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */,
+				C20EF5AD1DA7EE8500E2F59F /* PhotoPreviewController.m in Sources */,
 				C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */,
 				C28E2CA91D9C1DB90070BAAE /* TRGetVcCodeParam.m in Sources */,
+				C20EF5691DA7E79900E2F59F /* TRAuthorizationViewController.m in Sources */,
 				C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */,
 				C27E52D81D9A47D400009909 /* UIViewController+TRExtension.m in Sources */,
 				C20EF54C1DA7724B00E2F59F /* Toast.m in Sources */,
 				C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */,
+				C20EF5971DA7EE8500E2F59F /* AlbumListController.m in Sources */,
 				C263F91A1D9B9DDA00FF8BC4 /* TRAccountParam.m in Sources */,
 				C20EF5621DA7A3CD00E2F59F /* TRSettingTableViewController.m in Sources */,
 				C28E2C9B1D9C0E6D0070BAAE /* TRRootTool.m in Sources */,

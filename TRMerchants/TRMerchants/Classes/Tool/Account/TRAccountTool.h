@@ -14,7 +14,7 @@ typedef enum {
     TRLoginStateAccountNotExist = 2 //用户不存在
 }TRLoginState;
 
-@class TRAccount;
+@class TRAccount, TRUser;
 
 
 @interface TRAccountTool : NSObject
@@ -42,5 +42,18 @@ typedef enum {
  *  @param failure  失败回调
  */
 + (void)loginWithPhoneNum:(NSString *)phoneNum pwd:(NSString *)pwd success:(void(^)(TRLoginState state))success failure:(void(^)(NSError *error))failure;
+
+/**
+ *  存储用户账号
+ *
+ *  @param user 用户账号模型
+ */
++ (void)saveUser:(TRUser *)user;
+/**
+ *  读取用户
+ *
+ *  @return 用户模型
+ */
++ (TRUser *)user;
 
 @end

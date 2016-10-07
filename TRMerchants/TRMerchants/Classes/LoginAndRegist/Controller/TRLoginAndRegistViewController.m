@@ -55,7 +55,7 @@
 
 #pragma mark <返回>
 - (void)cancel {
-    
+    [self.view endEditing:YES];
     [UIView animateWithDuration:0.5 animations:^{
         self.navigationController.view.frame = CGRectMake(TRScreenW, 0, TRScreenW, TRScreenH);
         self.annimation();

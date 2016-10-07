@@ -8,6 +8,8 @@
 
 #import "TRSettingTableViewController.h"
 #import "TRBackButton.h"
+#import "TRAccountTool.h"
+#import "TRGuideViewController.h"
 
 @interface TRSettingTableViewController ()
 
@@ -24,7 +26,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    
+    [self setupNav];
     
 }
 
@@ -45,6 +47,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //取消选中
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+/**
+ *  登出
+ */
+- (IBAction)logout {
+    //清空账号信息
+    [TRAccountTool saveAccount:nil];
+    
+    TRGuideViewController *guiVc = [TRGuideViewController instantiateInitialViewControllerWithStoryboardName:@"LoginAndRegist"];
+    
+    //回到登录界面
+    [UIApplication sharedApplication].keyWindow.rootViewController = guiVc;
+    
 }
 
 

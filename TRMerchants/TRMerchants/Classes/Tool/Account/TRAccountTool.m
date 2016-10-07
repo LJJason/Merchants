@@ -10,9 +10,10 @@
 #import "TRAccountParam.h"
 #import "TRAccount.h"
 
+
 #define LoginUrl @"http://localhost:8080/TRMerchants/login"
 #define TRAccountFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"account.data"]
-
+#define TRUserFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"user.data"]
 
 @implementation TRAccountTool
 
@@ -71,5 +72,17 @@ static TRAccount *_account;
     return _account;
 }
 
++ (void)saveUser:(TRUser *)user {
+    [NSKeyedArchiver archiveRootObject:user toFile:TRUserFileName];
+}
+
+static TRUser *_user;
+
++ (TRUser *)user {
+    if (_user == nil) {
+        _user = [NSKeyedUnarchiver unarchiveObjectWithFile:TRUserFileName];
+    }
+    return _user;
+}
 
 @end

@@ -11,6 +11,7 @@
 #import <SVProgressHUD.h>
 #import "TRAccount.h"
 #import "TRMainViewController.h"
+#import "TRUser.h"
 
 @interface TRLoginViewController ()
 
@@ -27,6 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //取出用户账号
+    TRUser *user = [TRAccountTool user];
+    self.userNameTextField.text = user.userName;
+    [self.userNameTextField becomeFirstResponder];
 }
 
 //登录
@@ -44,9 +50,12 @@
             
             switch (state) {
                 case TRLoginStateOK:
-                    
+                {
+                    TRUser *user = [[TRUser alloc] init];
+                    user.userName = self.userNameTextField.text;
+                    [TRAccountTool saveUser:user];
                     [self showMainVc];
-                    
+                }
                     break;
                 case TRLoginStateAccountNotExist:
                     
