@@ -11,7 +11,7 @@
 @interface GFCollectionViewCell : UICollectionViewCell
 
 /** 图片 */
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UIButton *imageButton;
 
 
 /** 右上角的删除按钮 */

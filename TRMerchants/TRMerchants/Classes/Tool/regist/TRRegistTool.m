@@ -11,10 +11,10 @@
 #import "TRGetVcCodeParam.h"
 #import "TRRegistParam.h"
 
-//获取验证码的url
-#define TRGetVcCodeUrl   @"http://yearwood.top/TRMerchants/sendmessage"
-//注册的接口
-#define TRRegistUrl      @"http://yearwood.top/TRMerchants/regist"
+////获取验证码的url
+//#define TRGetVcCodeUrl   @"http://yearwood.top/TRMerchants/sendmessage"
+////注册的接口
+//#define TRRegistUrl      @"http://yearwood.top/TRMerchants/regist"
 
 @implementation TRRegistTool
 

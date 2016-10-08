@@ -11,7 +11,6 @@
 #import "TRAccount.h"
 
 
-#define LoginUrl @"http://localhost:8080/TRMerchants/login"
 #define TRAccountFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"account.data"]
 #define TRUserFileName [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"user.data"]
 
@@ -22,7 +21,7 @@
     param.phoneNum = phoneNum;
     param.pwd = pwd;
     
-    [TRHttpTool POST:LoginUrl parameters:param.mj_keyValues success:^(id responseObject) {
+    [TRHttpTool POST:TRLoginUrl parameters:param.mj_keyValues success:^(id responseObject) {
         
         NSString *uid = responseObject[@"uid"];
         if ([uid isEqualToString:phoneNum]) {

@@ -14,19 +14,26 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - HappyDNS (0.3.10)
   - MJExtension (3.0.13)
+  - Qiniu (7.1.0.1):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
   - AFNetworking
   - MJExtension
+  - Qiniu
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  Qiniu: 0e92ff0d1b9afbc55275306671284e4ebeb08d03
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: ba92df539275e57e65ae8754f1d38da637753786
+PODFILE CHECKSUM: 96b9bc4d78aebbd06f01986d81e7dd595a6236ee
 
 COCOAPODS: 1.0.1

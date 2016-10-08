@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -213,21 +214,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请上传三张身份证照片, 其中包含身份证正面、反面、手持身份证(必须保证五官清晰, 身份证上字迹清晰), 提交之后不允许修改" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ2-K7-sDm">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA3-vs-bjB">
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.56398168103448276" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="提交">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-FF-ec8">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -254,22 +244,45 @@
                                     <outlet property="delegate" destination="43O-n8-muS" id="wZT-uR-bsM"/>
                                 </connections>
                             </collectionView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydg-6j-Zak">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入身份证号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m7p-gv-MMx">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ydg-6j-Zak" firstAttribute="leading" secondItem="TZ2-K7-sDm" secondAttribute="leading" id="2eo-2m-IJl"/>
                             <constraint firstAttribute="trailing" secondItem="TZ2-K7-sDm" secondAttribute="trailing" constant="20" id="2rs-6A-VlI"/>
-                            <constraint firstAttribute="trailing" secondItem="NA3-vs-bjB" secondAttribute="trailing" constant="30" id="4Th-5o-iqB"/>
+                            <constraint firstItem="ydg-6j-Zak" firstAttribute="width" secondItem="TZ2-K7-sDm" secondAttribute="width" multiplier="0.5" id="9p3-Df-sql"/>
                             <constraint firstItem="TZ2-K7-sDm" firstAttribute="leading" secondItem="40d-aZ-NFI" secondAttribute="leading" constant="20" id="A07-sz-w2k"/>
                             <constraint firstItem="TZ2-K7-sDm" firstAttribute="top" secondItem="YTH-xI-9cr" secondAttribute="bottom" constant="20" id="CBQ-cG-Reo"/>
-                            <constraint firstItem="kKY-sh-WsJ" firstAttribute="top" secondItem="NA3-vs-bjB" secondAttribute="bottom" constant="30" id="e0l-SB-E7X"/>
+                            <constraint firstItem="ydg-6j-Zak" firstAttribute="top" secondItem="TZ2-K7-sDm" secondAttribute="bottom" constant="15" id="CZ0-bl-Ark"/>
+                            <constraint firstItem="m7p-gv-MMx" firstAttribute="leading" secondItem="ydg-6j-Zak" secondAttribute="leading" id="NKI-VB-8Mi"/>
                             <constraint firstItem="JoC-FF-ec8" firstAttribute="leading" secondItem="40d-aZ-NFI" secondAttribute="leading" constant="20" id="eDN-wZ-dxH"/>
-                            <constraint firstItem="NA3-vs-bjB" firstAttribute="leading" secondItem="40d-aZ-NFI" secondAttribute="leading" constant="30" id="mZo-wU-n9U"/>
+                            <constraint firstItem="m7p-gv-MMx" firstAttribute="top" secondItem="ydg-6j-Zak" secondAttribute="bottom" constant="20" id="eIX-TZ-BsU"/>
+                            <constraint firstItem="m7p-gv-MMx" firstAttribute="width" secondItem="TZ2-K7-sDm" secondAttribute="width" id="nkX-z9-xAa"/>
                             <constraint firstAttribute="trailing" secondItem="JoC-FF-ec8" secondAttribute="trailing" constant="20" id="rf0-yK-ybd"/>
-                            <constraint firstItem="JoC-FF-ec8" firstAttribute="top" secondItem="TZ2-K7-sDm" secondAttribute="bottom" constant="50" id="tg0-ou-GRf"/>
+                            <constraint firstItem="JoC-FF-ec8" firstAttribute="top" secondItem="m7p-gv-MMx" secondAttribute="bottom" constant="30" id="tWA-Ef-ioj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iu8-3b-jRf">
+                        <barButtonItem key="rightBarButtonItem" title="提交" id="7wc-Hv-lN3">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="submit:" destination="43O-n8-muS" id="H88-HL-SHa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="JoC-FF-ec8" id="RoO-zy-e9z"/>
+                        <outlet property="idNumTextField" destination="m7p-gv-MMx" id="eVk-C0-WmD"/>
+                        <outlet property="nameTextField" destination="ydg-6j-Zak" id="evv-cA-CgB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQ9-bg-GLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,7 +294,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tly-C8-68w" customClass="TRNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PI9-rj-F37">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PI9-rj-F37">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">

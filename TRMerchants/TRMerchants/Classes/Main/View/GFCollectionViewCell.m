@@ -24,9 +24,10 @@
 {
     [super awakeFromNib];
     
-    _imageView = [[UIImageView alloc] init];
+    _imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _imageButton.userInteractionEnabled = NO;
 //    _imageView.contentMode = UIViewContentModeCenter;
-    [self addSubview:_imageView];
+    [self addSubview:_imageButton];
     
     _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_deleteBtn setImage:[UIImage imageNamed:@"error"] forState:UIControlStateNormal];
@@ -41,7 +42,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.imageView.frame = self.bounds;
+    self.imageButton.frame = self.bounds;
     [self.deleteBtn sizeToFit];
     
     CGRect frame = _deleteBtn.frame;
