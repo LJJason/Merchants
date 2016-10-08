@@ -20,7 +20,7 @@ static NSArray *_images;
 static NSMutableArray *_imagePath;
 
 + (void)uploadMoreImage:(NSArray *)images success:(void (^)(NSArray *imagePath))success{
-    
+    _index = 0;
     _images = images;
     _imagePath = [NSMutableArray array];
     
@@ -69,17 +69,12 @@ static NSMutableArray *_imagePath;
         TRLog(@"resp ===== %@", resp);
         [_imagePath addObject:[NSString stringWithFormat:@"http://ruimedia.com.cn/%@", resp[@"key"]]];
         
-        TRLog(@"%@", _imagePath);
-        
         if (_imagePath.count < _images.count) {
             _index++;
             [self uploadMoreImageWithIndex:_index success:success];
         }else {
             
             if (_imagePath.count > 0) {
-//                NSString *urls = [_imagePath componentsJoinedByString:@","];
-                
-                TRLog(@"urls 字符串:%@", _imagePath);
                 if (success) {
                     success(_imagePath);
                 }

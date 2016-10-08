@@ -19,7 +19,9 @@ static Toast * _toast = nil;
         _text = [text copy];
         // Initialization code
         UIFont *font = [UIFont systemFontOfSize:16];
-        CGSize textSize = [_text sizeWithFont:font constrainedToSize:CGSizeMake(280, 60)];
+        //CGSize textSize = [_text sizeWithFont:font constrainedToSize:CGSizeMake(280, 60)];
+        CGSize textSize = [_text boundingRectWithSize:CGSizeMake(280, 60) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:nil].size;
+        
         //leak;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, textSize.width, textSize.height)];
         label.backgroundColor = [UIColor clearColor];
@@ -32,7 +34,7 @@ static Toast * _toast = nil;
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
         CGRect rect;
         rect.size = CGSizeMake(textSize.width + 20, textSize.height + 10);
-        rect.origin = CGPointMake((TRScreenW-rect.size.width)/2, TRScreenH - rect.size.height - 40);
+        rect.origin = CGPointMake((TRScreenW-rect.size.width)/2, TRScreenH - rect.size.height - 60);
         self.layer.cornerRadius = 5;
         self.layer.masksToBounds = YES;
         [self setFrame:rect];
@@ -59,7 +61,7 @@ static Toast * _toast = nil;
         _time = 3.0f;
     }
     else{
-        _time = 1.0f;
+        _time = 2.0f;
     }
     UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
     NSTimer *timer1 = [NSTimer timerWithTimeInterval:(_time/4.0f)  target:self selector:@selector(removeToast) userInfo:nil repeats:NO];

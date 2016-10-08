@@ -12,8 +12,10 @@
 #import <QiniuSDK.h>
 #import "TRUploadTool.h"
 #import "TRAuthorizationParam.h"
-#import "TRAccountTool.h"
+#import "TRAuthorizationStateTool.h"
+#import "TRAuthorizationView.h"
 #import "TRAccount.h"
+#import "TRAccountTool.h"
 
 //照片数量
 #define IMAGE_COUNT 3
@@ -35,6 +37,7 @@
  */
 @property (weak, nonatomic) IBOutlet UITextField *idNumTextField;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *commitBtn;
 
 
 @end
@@ -53,25 +56,48 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"实名认证";
+    //获取审核状态
+    [self checkStateOfAudit];
 }
+
+- (void)checkStateOfAudit{
+    
+    [TRProgressTool showWithMessage:@"正在加载中..."];
+    [TRAuthorizationStateTool authorizationStateWithSuccess:^(TRAuthorizationState state) {
+        if (state == TRAuthorizationStateToAudit) {//待审核
+            [self submitCompletedWithState:NO];
+        }else if (state == TRLoginStateAccountOK) {//已认证
+            [self submitCompletedWithState:YES];
+        }
+        [TRProgressTool dismiss];
+        
+    } failure:^{
+        [TRProgressTool dismiss];
+    }];
+    
+}
+
 
 #pragma mark <提交>
 - (IBAction)submit:(UIBarButtonItem *)sender {
+    
+    [self.view endEditing:YES];
+    
     if (self.images.count < IMAGE_COUNT) {
         [Utilities popUpAlertViewWithMsg:@"请上传3张图片" andTitle:nil];
     } else {
         
+        [TRProgressTool showWithMessage:@"正在提交..."];
         //上传身份证照片
         [TRUploadTool uploadMoreImage:self.images success:^(NSArray *imagePath) {
-            
+            [TRProgressTool dismiss];
+            TRLog(@"%zd", imagePath.count);
             if (imagePath.count < 3) {
                 [Toast makeText:@"提交失败!!请检查网络连接"];
+                
             }else {
-                
                 //存储认证信息
-                
-                
-                
+                [self saveDataWith:imagePath];
             }
             
             
@@ -100,15 +126,35 @@
     parma.idCard = self.idNumTextField.text;
     parma.photos = pathStr;
     //存储认证信息
-    [TRHttpTool POST:TRAuthenticationUrl parameters:parma success:^(id responseObject) {
+    [TRHttpTool POST:TRAuthenticationUrl parameters:parma.mj_keyValues success:^(id responseObject) {
         
+        if ([responseObject[@"state"] integerValue] == 1) {
+            //提交完认证信息
+            [self submitCompletedWithState:NO];
+        }
         
         
     } failure:^(NSError *error) {
-        
+        [Toast makeText:@"提交失败!!请检查网络连接"];
     }];
     
 }
+
+//正在审核状态显示的View
+- (void)submitCompletedWithState:(BOOL)state {
+    TRAuthorizationView *authView = [TRAuthorizationView authorizationView];
+    authView.frame = self.view.frame;
+    [self.view addSubview:authView];
+    
+    if (state) {
+        authView.label.text = @"已认证";
+    }
+    
+    NSMutableArray *rightBarButtonItems = [self.navigationItem.rightBarButtonItems mutableCopy];
+    [rightBarButtonItems removeObject:self.commitBtn];
+    self.navigationItem.rightBarButtonItems = rightBarButtonItems;
+}
+
 
 #pragma mark <UICollectionView 数据源和代理>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -123,6 +169,8 @@
         [cell.imageButton setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
         [cell.imageButton setBackgroundImage:[UIImage imageNamed:@"grey"] forState:UIControlStateNormal];
     }else{
+        
+        [cell.imageButton setImage:nil forState:UIControlStateNormal];
         [cell.imageButton setBackgroundImage:self.images[indexPath.row] forState:UIControlStateNormal];
     }
     cell.deleteBtn.hidden = YES;
@@ -154,7 +202,7 @@
 
 #pragma mark <图片选择器>
 - (void)pickView {
-    AlbumNavigationController *navigation = [[AlbumNavigationController alloc] initWithMaxImagesCount:9 delegate:self];
+    AlbumNavigationController *navigation = [[AlbumNavigationController alloc] initWithMaxImagesCount:3 delegate:self];
     
     [self presentViewController:navigation animated:YES completion:nil];
 }

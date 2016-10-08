@@ -21,3 +21,6 @@ UIKIT_EXTERN NSString * const TRGetTokenUrl;
 
 /** 实名认证接口 */
 UIKIT_EXTERN NSString * const TRAuthenticationUrl;
+
+/** 获取实名认证状态接口 */
+UIKIT_EXTERN NSString * const TRGetAuthenticationStateUrl;

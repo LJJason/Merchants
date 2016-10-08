@@ -13,4 +13,7 @@ NSString * const TRRegistUrl = @"http://yearwood.top/TRMerchants/regist";
 NSString * const TRGetTokenUrl = @"http://localhost:8080/TRMerchants/gettoken";
 
 /** 实名认证接口 */
-NSString * const TRAuthenticationUrl = @"http://yearwood.top/TRMerchants/ authentication";
+NSString * const TRAuthenticationUrl = @"http://localhost:8080/TRMerchants/authentication";
+
+/** 获取实名认证状态接口 */
+NSString * const TRGetAuthenticationStateUrl = @"http://localhost:8080/TRMerchants/authorizationState";

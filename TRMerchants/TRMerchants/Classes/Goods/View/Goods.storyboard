@@ -11,7 +11,7 @@
             <objects>
                 <navigationController storyboardIdentifier="TRNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Ma-fZ-8Dy" customClass="TRNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eMr-qo-Ac7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eMr-qo-Ac7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -56,20 +56,21 @@
                                     <outlet property="delegate" destination="X1q-AZ-W7T" id="aqQ-ML-0DF"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-p4-l2E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-p4-l2E">
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="添加新房间">
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="添加新房间" image="add_goods">
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SMG-RM-r3D" kind="show" id="CN9-5V-KEy"/>
+                                    <action selector="addGoodsBtn" destination="X1q-AZ-W7T" eventType="touchUpInside" id="ef4-2x-5yq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GPm-p4-l2E" firstAttribute="leading" secondItem="yHY-a0-vJm" secondAttribute="leading" id="1mf-7b-Yzl"/>
-                            <constraint firstItem="GPm-p4-l2E" firstAttribute="height" secondItem="yHY-a0-vJm" secondAttribute="height" multiplier="0.06" id="53d-Qg-mcF"/>
+                            <constraint firstItem="GPm-p4-l2E" firstAttribute="height" secondItem="yHY-a0-vJm" secondAttribute="height" multiplier="0.07" id="53d-Qg-mcF"/>
                             <constraint firstAttribute="trailing" secondItem="kGB-Xx-xTJ" secondAttribute="trailing" id="9ec-cv-3JC"/>
                             <constraint firstItem="ibX-jg-7gd" firstAttribute="top" secondItem="GPm-p4-l2E" secondAttribute="bottom" id="IAo-v7-Ebq"/>
                             <constraint firstItem="GPm-p4-l2E" firstAttribute="top" secondItem="kGB-Xx-xTJ" secondAttribute="bottom" id="beC-jy-xhC"/>
@@ -87,7 +88,7 @@
         <!--Add Rooms View Controller-->
         <scene sceneID="BdX-GT-00y">
             <objects>
-                <viewController id="SMG-RM-r3D" customClass="TRAddRoomsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TRAddRoomsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SMG-RM-r3D" customClass="TRAddRoomsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1VJ-Hx-plp"/>
                         <viewControllerLayoutGuide type="bottom" id="2gn-4c-QpO"/>
@@ -103,4 +104,7 @@
             <point key="canvasLocation" x="1874" y="30"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add_goods" width="35" height="35"/>
+    </resources>
 </document>

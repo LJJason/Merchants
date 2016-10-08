@@ -47,7 +47,7 @@
         [TRProgressTool showWithMessage:@"登录中..."];
         [TRAccountTool loginWithPhoneNum:userName pwd:pwd success:^(TRLoginState state) {
 
-            
+            [TRProgressTool dismiss];
             switch (state) {
                 case TRLoginStateOK:
                 {
@@ -69,10 +69,9 @@
                     break;
             }
             
-            
-            [TRProgressTool dismiss];
         } failure:^(NSError *error) {
             TRLog(@"%@", error);
+            [TRProgressTool dismiss];
             [Toast makeText:@"登录失败, 请检查网络连接!!"];
         }];
     }else {

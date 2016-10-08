@@ -8,8 +8,13 @@
 
 #import "TRGoodsTableViewController.h"
 #import "TRBackButton.h"
+#import "TRAuthorizationStateTool.h"
+#import "TRAddRoomsViewController.h"
 
 @interface TRGoodsTableViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+/** 认证状态 */
+@property (nonatomic, assign) TRAuthorizationState state;
 
 @end
 
@@ -26,6 +31,13 @@
     
     //设置导航条相关
     [self setupNav];
+    [TRProgressTool showWithMessage:@"加载中..."];
+    [TRAuthorizationStateTool authorizationStateWithSuccess:^(TRAuthorizationState state) {
+        self.state = state;
+        [TRProgressTool dismiss];
+    } failure:^{
+        [TRProgressTool dismiss];
+    }];
     
 }
 
@@ -86,22 +98,18 @@
 }
 */
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (IBAction)addGoodsBtn {
+    
+    if (self.state == TRLoginStateAccountOK) {
+        
+        TRAddRoomsViewController *addRoomVc = [TRAddRoomsViewController viewControllerWtithStoryboardName:@"Goods" identifier:@"TRAddRoomsViewController"];
+        [self.navigationController pushViewController:addRoomVc animated:YES];
+        
+    }else {
+        [Toast makeText:@"请先在设置中完成实名认证, 如果已经提交, 请等待审核完成!!"];
+        return;
+    }
+    
 }
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

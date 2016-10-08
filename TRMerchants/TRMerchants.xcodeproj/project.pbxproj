@@ -45,9 +45,10 @@
 		C20EF5AC1DA7EE8500E2F59F /* PhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5901DA7EE8500E2F59F /* PhotoPreviewCell.m */; };
 		C20EF5AD1DA7EE8500E2F59F /* PhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5921DA7EE8500E2F59F /* PhotoPreviewController.m */; };
 		C20EF5AE1DA7EE8500E2F59F /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF5941DA7EE8500E2F59F /* VideoPlayerController.m */; };
+		C20FD37B1DA950C30013A090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20FD37A1DA950C30013A090 /* Assets.xcassets */; };
+		C20FD37F1DA952A70013A090 /* TRAuthorizationStateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C20FD37E1DA952A70013A090 /* TRAuthorizationStateTool.m */; };
 		C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F56831D9DF3F5005594A9 /* Utilities.m */; };
 		C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */; };
-		C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0111D9273A40066A501 /* Assets.xcassets */; };
 		C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */; };
 		C22AC0201D9273A40066A501 /* TRMerchantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC01F1D9273A40066A501 /* TRMerchantsTests.m */; };
 		C22AC02B1D9273A40066A501 /* TRMerchantsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC02A1D9273A40066A501 /* TRMerchantsUITests.m */; };
@@ -74,6 +75,8 @@
 		C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */; };
 		C2E7A1261DA8BE6400D2CB2C /* TRConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7A1251DA8BE6400D2CB2C /* TRConst.m */; };
 		C2E7A12C1DA8D44300D2CB2C /* TRAuthorizationParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7A12B1DA8D44300D2CB2C /* TRAuthorizationParam.m */; };
+		C2E7A12F1DA8DAA500D2CB2C /* TRAuthorizationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7A12E1DA8DAA500D2CB2C /* TRAuthorizationView.m */; };
+		C2E7A1311DA8DAC300D2CB2C /* TRAuthorizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2E7A1301DA8DAC300D2CB2C /* TRAuthorizationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,11 +157,13 @@
 		C20EF5921DA7EE8500E2F59F /* PhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPreviewController.m; sourceTree = "<group>"; };
 		C20EF5931DA7EE8500E2F59F /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
 		C20EF5941DA7EE8500E2F59F /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
+		C20FD37A1DA950C30013A090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C20FD37D1DA952A70013A090 /* TRAuthorizationStateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAuthorizationStateTool.h; sourceTree = "<group>"; };
+		C20FD37E1DA952A70013A090 /* TRAuthorizationStateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAuthorizationStateTool.m; sourceTree = "<group>"; };
 		C21F56821D9DF3F5005594A9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		C21F56831D9DF3F5005594A9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		C22ABFFF1D9273A40066A501 /* TRMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRMerchants.xcdatamodel; sourceTree = "<group>"; };
-		C22AC0111D9273A40066A501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22AC0141D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C22AC0161D9273A40066A501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C22AC01B1D9273A40066A501 /* TRMerchantsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRMerchantsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +217,9 @@
 		C2E7A1251DA8BE6400D2CB2C /* TRConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRConst.m; sourceTree = "<group>"; };
 		C2E7A12A1DA8D44300D2CB2C /* TRAuthorizationParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAuthorizationParam.h; sourceTree = "<group>"; };
 		C2E7A12B1DA8D44300D2CB2C /* TRAuthorizationParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAuthorizationParam.m; sourceTree = "<group>"; };
+		C2E7A12D1DA8DAA500D2CB2C /* TRAuthorizationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAuthorizationView.h; sourceTree = "<group>"; };
+		C2E7A12E1DA8DAA500D2CB2C /* TRAuthorizationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAuthorizationView.m; sourceTree = "<group>"; };
+		C2E7A1301DA8DAC300D2CB2C /* TRAuthorizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRAuthorizationView.xib; sourceTree = "<group>"; };
 		F4F0493DAE880C2A972B6143 /* libPods-TRMerchants.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRMerchants.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -265,6 +273,9 @@
 				C20EF56A1DA7EBC800E2F59F /* GFCollectionViewCell.h */,
 				C20EF56B1DA7EBC800E2F59F /* GFCollectionViewCell.m */,
 				C20EF5521DA78A5B00E2F59F /* Main.storyboard */,
+				C2E7A12D1DA8DAA500D2CB2C /* TRAuthorizationView.h */,
+				C2E7A12E1DA8DAA500D2CB2C /* TRAuthorizationView.m */,
+				C2E7A1301DA8DAC300D2CB2C /* TRAuthorizationView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +351,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		C20FD37C1DA9524F0013A090 /* AuthorizationState */ = {
+			isa = PBXGroup;
+			children = (
+				C20FD37D1DA952A70013A090 /* TRAuthorizationStateTool.h */,
+				C20FD37E1DA952A70013A090 /* TRAuthorizationStateTool.m */,
+			);
+			path = AuthorizationState;
+			sourceTree = "<group>";
+		};
 		C21F56811D9DF3E6005594A9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,8 +398,8 @@
 			isa = PBXGroup;
 			children = (
 				C22AC0381D9277240066A501 /* Classes */,
-				C22AC0111D9273A40066A501 /* Assets.xcassets */,
 				C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */,
+				C20FD37A1DA950C30013A090 /* Assets.xcassets */,
 				C22AC0021D9273A40066A501 /* Supporting Files */,
 			);
 			path = TRMerchants;
@@ -654,6 +674,7 @@
 		C28C353A1D9B4F2F002D8745 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C20FD37C1DA9524F0013A090 /* AuthorizationState */,
 				C286E4311DA8986F0013AF2A /* Upload */,
 				C20EF54D1DA7817F00E2F59F /* HUD */,
 				C263F9101D9B9D8F00FF8BC4 /* Account */,
@@ -813,9 +834,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */,
-				C22AC0121D9273A40066A501 /* Assets.xcassets in Resources */,
+				C2E7A1311DA8DAC300D2CB2C /* TRAuthorizationView.xib in Resources */,
 				C20EF59B1DA7EE8500E2F59F /* MMVideoPreviewPlayHL@2x.png in Resources */,
 				C20EF5A31DA7EE8500E2F59F /* photo_sel_previewVc@2x.png in Resources */,
+				C20FD37B1DA950C30013A090 /* Assets.xcassets in Resources */,
 				C20EF5A61DA7EE8500E2F59F /* TableViewArrow@2x.png in Resources */,
 				C20EF59C1DA7EE8500E2F59F /* navi_back@2x.png in Resources */,
 				C20EF5581DA78CF500E2F59F /* Goods.storyboard in Resources */,
@@ -916,8 +938,10 @@
 				C20EF5A81DA7EE8500E2F59F /* PhotoPickerCell.m in Sources */,
 				C20EF5961DA7EE8500E2F59F /* AlbumDataModel.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
+				C2E7A12F1DA8DAA500D2CB2C /* TRAuthorizationView.m in Sources */,
 				C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */,
 				C20EF5501DA781AF00E2F59F /* TRProgressTool.m in Sources */,
+				C20FD37F1DA952A70013A090 /* TRAuthorizationStateTool.m in Sources */,
 				C22AC04E1D9277240066A501 /* main.m in Sources */,
 				C20EF5AB1DA7EE8500E2F59F /* PhotoPickerModel.m in Sources */,
 				C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */,

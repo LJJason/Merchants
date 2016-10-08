@@ -27,10 +27,12 @@
                                     <action selector="rooms" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2C-N4-Ahv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWd-3y-AeA">
-                                <frame key="frameInset" minX="293" minY="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWd-3y-AeA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="zLT-Iy-0Pu"/>
+                                    <constraint firstAttribute="width" constant="35" id="zRj-to-YVg"/>
+                                </constraints>
+                                <state key="normal" image="setting"/>
                                 <connections>
                                     <segue destination="tly-C8-68w" kind="modal" modalTransitionStyle="crossDissolve" id="lnF-Fz-jc8"/>
                                 </connections>
@@ -49,7 +51,9 @@
                             <constraint firstItem="U4c-27-cqZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3ao-eG-xHo"/>
                             <constraint firstItem="U4c-27-cqZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="96w-mZ-XNe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U4c-27-cqZ" secondAttribute="bottom" id="EOB-iK-VbE"/>
+                            <constraint firstAttribute="trailing" secondItem="KWd-3y-AeA" secondAttribute="trailing" constant="20" id="KGm-hV-FfR"/>
                             <constraint firstAttribute="trailing" secondItem="U4c-27-cqZ" secondAttribute="trailing" id="RK0-yW-8Xv"/>
+                            <constraint firstAttribute="bottom" secondItem="KWd-3y-AeA" secondAttribute="bottom" constant="20" id="ZSh-VN-gJy"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -281,6 +285,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="JoC-FF-ec8" id="RoO-zy-e9z"/>
+                        <outlet property="commitBtn" destination="7wc-Hv-lN3" id="OLi-ki-yQ7"/>
                         <outlet property="idNumTextField" destination="m7p-gv-MMx" id="eVk-C0-WmD"/>
                         <outlet property="nameTextField" destination="ydg-6j-Zak" id="evv-cA-CgB"/>
                     </connections>
@@ -315,5 +320,6 @@
         <image name="main_bg" width="1242" height="2408"/>
         <image name="order" width="210" height="210"/>
         <image name="rooms" width="210" height="210"/>
+        <image name="setting" width="128" height="128"/>
     </resources>
 </document>
