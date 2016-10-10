@@ -22,7 +22,7 @@
         
         self.titleLabel.font = [UIFont systemFontOfSize:14];
         [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [self setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        [self setTitleColor:TRColor(101, 202, 97, 1.0) forState:UIControlStateSelected];
         
         [self addTarget:self action:@selector(changeSelectStatus:) forControlEvents:UIControlEventTouchUpInside];
     }

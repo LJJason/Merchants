@@ -91,7 +91,7 @@
     
     [self.view endEditing:YES];
     
-    if (self.images.count < IMAGE_COUNT) {
+    if (self.images.count != IMAGE_COUNT) {
         [Utilities popUpAlertViewWithMsg:@"请上传3张图片" andTitle:nil];
     } else {
         

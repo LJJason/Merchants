@@ -73,6 +73,7 @@
 		C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2C9E1D9C1BFB0070BAAE /* TRRegistTool.m */; };
 		C28E2CA91D9C1DB90070BAAE /* TRGetVcCodeParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2CA81D9C1DB90070BAAE /* TRGetVcCodeParam.m */; };
 		C28E2CAC1D9C1DD20070BAAE /* TRRegistParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2CAB1D9C1DD20070BAAE /* TRRegistParam.m */; };
+		C2959F761DAB2D3D009B75FB /* TRAddRoomParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C2959F751DAB2D3D009B75FB /* TRAddRoomParam.m */; };
 		C297FAF71DAA275500F7CC61 /* TRAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C297FAF61DAA275500F7CC61 /* TRAddCollectionViewCell.m */; };
 		C297FAFA1DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C297FAF91DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m */; };
 		C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */; };
@@ -219,6 +220,8 @@
 		C28E2CA81D9C1DB90070BAAE /* TRGetVcCodeParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGetVcCodeParam.m; sourceTree = "<group>"; };
 		C28E2CAA1D9C1DD20070BAAE /* TRRegistParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegistParam.h; sourceTree = "<group>"; };
 		C28E2CAB1D9C1DD20070BAAE /* TRRegistParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegistParam.m; sourceTree = "<group>"; };
+		C2959F741DAB2D3D009B75FB /* TRAddRoomParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAddRoomParam.h; sourceTree = "<group>"; };
+		C2959F751DAB2D3D009B75FB /* TRAddRoomParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAddRoomParam.m; sourceTree = "<group>"; };
 		C297FAF51DAA275500F7CC61 /* TRAddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAddCollectionViewCell.h; sourceTree = "<group>"; };
 		C297FAF61DAA275500F7CC61 /* TRAddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAddCollectionViewCell.m; sourceTree = "<group>"; };
 		C297FAF81DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoomImageCollectionViewCell.h; sourceTree = "<group>"; };
@@ -702,6 +705,7 @@
 		C28C353A1D9B4F2F002D8745 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C2959F721DAB2D22009B75FB /* AddRoom */,
 				C20FD37C1DA9524F0013A090 /* AuthorizationState */,
 				C286E4311DA8986F0013AF2A /* Upload */,
 				C20EF54D1DA7817F00E2F59F /* HUD */,
@@ -739,6 +743,23 @@
 				C28E2CA81D9C1DB90070BAAE /* TRGetVcCodeParam.m */,
 				C28E2CAA1D9C1DD20070BAAE /* TRRegistParam.h */,
 				C28E2CAB1D9C1DD20070BAAE /* TRRegistParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		C2959F721DAB2D22009B75FB /* AddRoom */ = {
+			isa = PBXGroup;
+			children = (
+				C2959F731DAB2D22009B75FB /* Param */,
+			);
+			path = AddRoom;
+			sourceTree = "<group>";
+		};
+		C2959F731DAB2D22009B75FB /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				C2959F741DAB2D3D009B75FB /* TRAddRoomParam.h */,
+				C2959F751DAB2D3D009B75FB /* TRAddRoomParam.m */,
 			);
 			path = Param;
 			sourceTree = "<group>";
@@ -967,6 +988,7 @@
 				C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */,
 				C20EF5951DA7EE8500E2F59F /* AlbumDataHandle.m in Sources */,
 				C297FAF71DAA275500F7CC61 /* TRAddCollectionViewCell.m in Sources */,
+				C2959F761DAB2D3D009B75FB /* TRAddRoomParam.m in Sources */,
 				C20EF5A81DA7EE8500E2F59F /* PhotoPickerCell.m in Sources */,
 				C20EF5961DA7EE8500E2F59F /* AlbumDataModel.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,

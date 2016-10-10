@@ -105,6 +105,9 @@
         TRAddRoomsViewController *addRoomVc = [TRAddRoomsViewController viewControllerWtithStoryboardName:@"Goods" identifier:@"TRAddRoomsViewController"];
         [self.navigationController pushViewController:addRoomVc animated:YES];
         
+    }else if(self.state == 0){
+        [Toast makeText:@"请检查网络连接!!"];
+        return;
     }else {
         [Toast makeText:@"请先在设置中完成实名认证, 如果已经提交, 请等待审核完成!!"];
         return;

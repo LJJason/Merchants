@@ -124,7 +124,7 @@
                                                             </view>
                                                         </collectionViewCell>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="room" id="Jpc-yK-RyC" customClass="TRRoomImageCollectionViewCell">
-                                                            <rect key="frame" x="118" y="0.0" width="100" height="100"/>
+                                                            <rect key="frame" x="117.5" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -340,7 +340,7 @@
                                                         </view>
                                                     </collectionViewCell>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="room" id="H9P-yo-MV8" customClass="TRRoomImageCollectionViewCell">
-                                                        <rect key="frame" x="127" y="0.0" width="100" height="100"/>
+                                                        <rect key="frame" x="127.5" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -417,7 +417,7 @@
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入价格" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmG-pk-TO0">
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -522,10 +522,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressTextField" destination="RUL-pl-xUz" id="3eI-Oh-NZc"/>
                         <outlet property="checkBoxConstraint" destination="MkV-ir-Mdq" id="VYO-lC-x6z"/>
+                        <outlet property="checkBoxView" destination="WBJ-7Z-QDs" id="Ybj-rV-IeS"/>
                         <outlet property="collectionView" destination="G6V-XZ-bcw" id="LbV-ml-Dg2"/>
                         <outlet property="collectionViewConstraint" destination="QS9-nL-d94" id="J6j-PN-JAT"/>
-                        <outlet property="containerView" destination="n77-vz-Ie0" id="4P7-gq-VDZ"/>
+                        <outlet property="describeTextView" destination="K1l-8o-PLu" id="nKO-kF-E5U"/>
+                        <outlet property="phoneNumTextField" destination="tqX-e5-zoq" id="JdW-Zg-AZ0"/>
+                        <outlet property="priceTextField" destination="ZmG-pk-TO0" id="XjZ-yb-LEG"/>
+                        <outlet property="scrollView" destination="ecE-o2-0NO" id="dgU-oH-2bX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNY-9m-uwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
