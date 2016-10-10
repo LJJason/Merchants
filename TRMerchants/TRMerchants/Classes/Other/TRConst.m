@@ -20,3 +20,7 @@ NSString * const TRGetAuthenticationStateUrl = @"http://localhost:8080/TRMerchan
 
 /** 添加房间接口 */
 NSString * const TRAddRoomUrl = @"http://localhost:8080/TRMerchants/addroom";
+
+/** 查看房间接口 */
+NSString * const TRRoomUrl = @"http://localhost:8080/TRMerchants/getAllRoom";
+

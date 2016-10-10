@@ -69,6 +69,9 @@
 		C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53721D9A73FD00009909 /* TRLoginAndRegistViewController.m */; };
 		C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E53751D9A765900009909 /* TRRegistViewController.m */; };
 		C286E4351DA899760013AF2A /* TRUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C286E4341DA899760013AF2A /* TRUploadTool.m */; };
+		C28D55871DABE9E2005A3A54 /* TRRoomParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C28D55861DABE9E2005A3A54 /* TRRoomParam.m */; };
+		C28D558A1DABF755005A3A54 /* TRRoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C28D55891DABF755005A3A54 /* TRRoomCell.m */; };
+		C28D558D1DABF838005A3A54 /* TRRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = C28D558C1DABF838005A3A54 /* TRRoom.m */; };
 		C28E2C9B1D9C0E6D0070BAAE /* TRRootTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2C9A1D9C0E6D0070BAAE /* TRRootTool.m */; };
 		C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2C9E1D9C1BFB0070BAAE /* TRRegistTool.m */; };
 		C28E2CA91D9C1DB90070BAAE /* TRGetVcCodeParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2CA81D9C1DB90070BAAE /* TRGetVcCodeParam.m */; };
@@ -212,6 +215,12 @@
 		C27E53751D9A765900009909 /* TRRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegistViewController.m; sourceTree = "<group>"; };
 		C286E4331DA899760013AF2A /* TRUploadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUploadTool.h; sourceTree = "<group>"; };
 		C286E4341DA899760013AF2A /* TRUploadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUploadTool.m; sourceTree = "<group>"; };
+		C28D55851DABE9E2005A3A54 /* TRRoomParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoomParam.h; sourceTree = "<group>"; };
+		C28D55861DABE9E2005A3A54 /* TRRoomParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoomParam.m; sourceTree = "<group>"; };
+		C28D55881DABF755005A3A54 /* TRRoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoomCell.h; sourceTree = "<group>"; };
+		C28D55891DABF755005A3A54 /* TRRoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoomCell.m; sourceTree = "<group>"; };
+		C28D558B1DABF838005A3A54 /* TRRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoom.h; sourceTree = "<group>"; };
+		C28D558C1DABF838005A3A54 /* TRRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoom.m; sourceTree = "<group>"; };
 		C28E2C991D9C0E6D0070BAAE /* TRRootTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRootTool.h; sourceTree = "<group>"; };
 		C28E2C9A1D9C0E6D0070BAAE /* TRRootTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRootTool.m; sourceTree = "<group>"; };
 		C28E2C9D1D9C1BFB0070BAAE /* TRRegistTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegistTool.h; sourceTree = "<group>"; };
@@ -492,6 +501,8 @@
 		C22AC03B1D9277240066A501 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C28D558B1DABF838005A3A54 /* TRRoom.h */,
+				C28D558C1DABF838005A3A54 /* TRRoom.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -508,6 +519,8 @@
 				C221D93B1DAA81EF00438B27 /* TRCheckBox.m */,
 				C221D93D1DAA9D4200438B27 /* TRTableViewCell.h */,
 				C221D93E1DAA9D4300438B27 /* TRTableViewCell.m */,
+				C28D55881DABF755005A3A54 /* TRRoomCell.h */,
+				C28D55891DABF755005A3A54 /* TRRoomCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -705,6 +718,7 @@
 		C28C353A1D9B4F2F002D8745 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C28D55831DABE9CB005A3A54 /* Room */,
 				C2959F721DAB2D22009B75FB /* AddRoom */,
 				C20FD37C1DA9524F0013A090 /* AuthorizationState */,
 				C286E4311DA8986F0013AF2A /* Upload */,
@@ -715,6 +729,23 @@
 				C28E2C9C1D9C1BD70070BAAE /* regist */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		C28D55831DABE9CB005A3A54 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				C28D55841DABE9CB005A3A54 /* Param */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		C28D55841DABE9CB005A3A54 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				C28D55851DABE9E2005A3A54 /* TRRoomParam.h */,
+				C28D55861DABE9E2005A3A54 /* TRRoomParam.m */,
+			);
+			path = Param;
 			sourceTree = "<group>";
 		};
 		C28E2C981D9C0E590070BAAE /* Root */ = {
@@ -985,6 +1016,7 @@
 				C20EF55F1DA79C9E00E2F59F /* TRAddRoomsViewController.m in Sources */,
 				C20EF5AC1DA7EE8500E2F59F /* PhotoPreviewCell.m in Sources */,
 				C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */,
+				C28D558D1DABF838005A3A54 /* TRRoom.m in Sources */,
 				C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */,
 				C20EF5951DA7EE8500E2F59F /* AlbumDataHandle.m in Sources */,
 				C297FAF71DAA275500F7CC61 /* TRAddCollectionViewCell.m in Sources */,
@@ -993,6 +1025,7 @@
 				C20EF5961DA7EE8500E2F59F /* AlbumDataModel.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
 				C2E7A12F1DA8DAA500D2CB2C /* TRAuthorizationView.m in Sources */,
+				C28D55871DABE9E2005A3A54 /* TRRoomParam.m in Sources */,
 				C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */,
 				C20EF5501DA781AF00E2F59F /* TRProgressTool.m in Sources */,
 				C20FD37F1DA952A70013A090 /* TRAuthorizationStateTool.m in Sources */,
@@ -1025,6 +1058,7 @@
 				C20EF5971DA7EE8500E2F59F /* AlbumListController.m in Sources */,
 				C263F91A1D9B9DDA00FF8BC4 /* TRAccountParam.m in Sources */,
 				C286E4351DA899760013AF2A /* TRUploadTool.m in Sources */,
+				C28D558A1DABF755005A3A54 /* TRRoomCell.m in Sources */,
 				C20EF5621DA7A3CD00E2F59F /* TRSettingTableViewController.m in Sources */,
 				C28E2C9B1D9C0E6D0070BAAE /* TRRootTool.m in Sources */,
 				C28E2CAC1D9C1DD20070BAAE /* TRRegistParam.m in Sources */,

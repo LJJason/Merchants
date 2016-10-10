@@ -10,6 +10,9 @@
 #import "TRBackButton.h"
 #import "TRAuthorizationStateTool.h"
 #import "TRAddRoomsViewController.h"
+#import "TRRoomParam.h"
+#import "TRAccount.h"
+#import "TRAccountTool.h"
 
 @interface TRGoodsTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -38,7 +41,7 @@
     } failure:^{
         [TRProgressTool dismiss];
     }];
-    
+    [self loadMoreRoom];
 }
 
 
@@ -52,7 +55,18 @@
 
 - (void)loadMoreRoom{
     
-    //[TRHttpTool GET:<#(NSString *)#> parameters:<#(id)#> success:<#^(id responseObject)success#> failure:<#^(NSError *error)failure#>];
+    TRAccount *account = [TRAccountTool account];
+    
+    TRRoomParam *param = [[TRRoomParam alloc] init];
+    param.uid = account.uid;
+    
+    [TRHttpTool GET:TRRoomUrl parameters:param.mj_keyValues success:^(id responseObject) {
+        
+        TRLog(@"%@", responseObject);
+        
+    } failure:^(NSError *error) {
+        
+    }];
     
 }
 

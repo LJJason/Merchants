@@ -27,3 +27,6 @@ UIKIT_EXTERN NSString * const TRGetAuthenticationStateUrl;
 
 /** 添加房间接口 */
 UIKIT_EXTERN NSString * const TRAddRoomUrl;
+
+/** 查看房间接口 */
+UIKIT_EXTERN NSString * const TRRoomUrl;
