@@ -7,6 +7,8 @@
 //
 
 #import "TRRoomCell.h"
+#import <UIImageView+WebCache.h>
+#import "TRRoom.h"
 
 @interface TRRoomCell ()
 
@@ -49,8 +51,20 @@
 
 - (void)setRoom:(TRRoom *)room {
     _room = room;
+    //设置图片
+    [self.photoView sd_setImageWithURL:[NSURL URLWithString:room.photos[0]]];
     
+    //设置描述
+    self.describeLbl.text = room.describes;
     
+    //设置价格
+    self.priceLbl.text = [NSString stringWithFormat:@"¥ %zd", room.price];
+    
+    //设置销量
+    self.salesLbl.text = [NSString stringWithFormat:@"销量: %zd", room.sales];
+    
+    //设置收藏量
+    self.collectionsLbl.text = [NSString stringWithFormat:@"收藏: %zd", room.collections.count];
     
 }
 
