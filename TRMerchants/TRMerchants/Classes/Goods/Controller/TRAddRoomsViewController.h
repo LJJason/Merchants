@@ -10,4 +10,7 @@
 
 @interface TRAddRoomsViewController : UIViewController
 
+/** 添加房间成功的回调 */
+@property (nonatomic, copy) void (^addRoomSuccess)();
+
 @end

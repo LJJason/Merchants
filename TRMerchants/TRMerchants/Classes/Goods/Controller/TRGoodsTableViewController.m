@@ -50,6 +50,11 @@
     
 }
 
+- (void)loadMoreRoom{
+    
+    //[TRHttpTool GET:<#(NSString *)#> parameters:<#(id)#> success:<#^(id responseObject)success#> failure:<#^(NSError *error)failure#>];
+    
+}
 
 
 - (void)cancel{
@@ -100,15 +105,21 @@
 
 - (IBAction)addGoodsBtn {
     
-    if (self.state == TRAuthorizationStateOK) {
+    if (self.state == TRAuthorizationStateOK) {//已认证商家
         
         TRAddRoomsViewController *addRoomVc = [TRAddRoomsViewController viewControllerWtithStoryboardName:@"Goods" identifier:@"TRAddRoomsViewController"];
+        
+        //房间添加成功回调
+        addRoomVc.addRoomSuccess = ^{
+            
+        };
+        
         [self.navigationController pushViewController:addRoomVc animated:YES];
         
     }else if(self.state == 0){
         [Toast makeText:@"请检查网络连接!!"];
         return;
-    }else {
+    }else {//未认证商家
         [Toast makeText:@"请先在设置中完成实名认证, 如果已经提交, 请等待审核完成!!"];
         return;
     }

@@ -146,8 +146,7 @@
         [TRProgressTool showWithMessage:@"正在提交..."];
         //上房间照片
         [TRUploadTool uploadMoreImage:self.images success:^(NSArray *imagePath) {
-            [TRProgressTool dismiss];
-            TRLog(@"%zd", imagePath.count);
+
             if (imagePath.count < self.images.count) {
                 
                 [TRProgressTool dismiss];
@@ -208,12 +207,23 @@
     parma.price = price;
     
     //存储认证信息
-    [TRHttpTool POST:TRAuthenticationUrl parameters:parma.mj_keyValues success:^(id responseObject) {
-        
+    [TRHttpTool POST:TRAddRoomUrl parameters:parma.mj_keyValues success:^(id responseObject) {
+        [TRProgressTool dismiss];
         TRLog(@"%@", responseObject);
         
+        NSInteger state = [responseObject[@"state"] integerValue];
+        
+        if (state == 1) {
+            if (self.addRoomSuccess) {
+                self.addRoomSuccess();
+            }
+        }else {
+            [Toast makeText:@"提交失败!!请检查网络连接!"];
+        }
+        
     } failure:^(NSError *error) {
-        [Toast makeText:@"提交失败!!请检查网络连接"];
+        [TRProgressTool dismiss];
+        [Toast makeText:@"提交失败!!请检查网络连接!"];
     }];
 }
 
@@ -336,6 +346,10 @@
     
     
     
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 @end

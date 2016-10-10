@@ -17,3 +17,6 @@ NSString * const TRAuthenticationUrl = @"http://localhost:8080/TRMerchants/authe
 
 /** 获取实名认证状态接口 */
 NSString * const TRGetAuthenticationStateUrl = @"http://localhost:8080/TRMerchants/authorizationState";
+
+/** 添加房间接口 */
+NSString * const TRAddRoomUrl = @"http://localhost:8080/TRMerchants/addroom";
