@@ -42,14 +42,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGB-Xx-xTJ">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rooms" rowHeight="128" id="PIK-ZT-xHS" customClass="TRRoomCell">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="128"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rooms" rowHeight="120" id="PIK-ZT-xHS" customClass="TRRoomCell">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PIK-ZT-xHS" id="db4-vt-bRy">
-                                            <frame key="frameInset" width="375" height="127"/>
+                                            <frame key="frameInset" width="375" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUg-fz-Sct">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUg-fz-Sct">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="F54-4U-4Uz"/>
                                                         <constraint firstAttribute="height" constant="100" id="QBv-d9-9IC"/>
@@ -89,6 +89,9 @@
                                                 <constraint firstItem="ICD-8j-0L7" firstAttribute="leading" secondItem="aoS-xd-nYl" secondAttribute="trailing" constant="40" id="zqq-at-mjn"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="uUg-fz-Sct" secondAttribute="bottom" constant="10" id="3wL-tx-l5J"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="collectionsLbl" destination="ICD-8j-0L7" id="BaQ-Hm-nt0"/>
                                             <outlet property="describeLbl" destination="ZyE-BC-mZl" id="4fG-Il-4q2"/>
@@ -127,6 +130,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xge-yM-tYB"/>
+                    <connections>
+                        <outlet property="tableView" destination="kGB-Xx-xTJ" id="718-Gd-xM4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZU-9S-jPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

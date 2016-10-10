@@ -13,15 +13,24 @@
 #import "TRRoomParam.h"
 #import "TRAccount.h"
 #import "TRAccountTool.h"
+#import "TRRoom.h"
+#import "TRRoomCell.h"
 
 @interface TRGoodsTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 /** 认证状态 */
 @property (nonatomic, assign) TRAuthorizationState state;
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+/** 房间 */
+@property (nonatomic, strong) NSArray *rooms;
+
 @end
 
 @implementation TRGoodsTableViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -59,13 +68,14 @@
     
     TRRoomParam *param = [[TRRoomParam alloc] init];
     param.uid = account.uid;
-    
+    [TRProgressTool showWithMessage:@"正在加载..."];
     [TRHttpTool GET:TRRoomUrl parameters:param.mj_keyValues success:^(id responseObject) {
         
-        TRLog(@"%@", responseObject);
-        
+        self.rooms = [TRRoom mj_objectArrayWithKeyValuesArray:responseObject[@"rooms"]];
+        [TRProgressTool dismiss];
+        [self.tableView reloadData];
     } failure:^(NSError *error) {
-        
+        [TRProgressTool dismiss];
     }];
     
 }
@@ -78,14 +88,14 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return self.rooms.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rooms"];
+    TRRoomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rooms"];
     
-    // Configure the cell...
+    cell.room = self.rooms[indexPath.row];
     
     return cell;
 }
@@ -125,7 +135,7 @@
         
         //房间添加成功回调
         addRoomVc.addRoomSuccess = ^{
-            
+            [self loadMoreRoom];
         };
         
         [self.navigationController pushViewController:addRoomVc animated:YES];

@@ -17,6 +17,9 @@
     if (self) {
         self.exclusiveTouch = YES;
         
+        self.layer.cornerRadius = 4;
+        self.clipsToBounds = YES;
+        
         [self setImage:[UIImage imageNamed:@"checkbox1_unchecked"] forState:UIControlStateNormal];
         [self setImage:[UIImage imageNamed:@"checkbox1_checked"] forState:UIControlStateSelected];
         

@@ -106,7 +106,6 @@
         CGFloat checkBoxY = (marginH + checkBoxH) * row;
         
         TRCheckBox *checkBox = [[TRCheckBox alloc]initWithFrame:CGRectMake(checkBoxX, checkBoxY, checkBoxW, checkBoxH)];
-        checkBox.backgroundColor = [UIColor yellowColor];
         checkBox.tag = 10001 + i;
         checkBox.delegate = self;
         [checkBox setTitle:self.configurations[i] forState:UIControlStateNormal];
@@ -216,6 +215,7 @@
         if (state == 1) {
             if (self.addRoomSuccess) {
                 self.addRoomSuccess();
+                [self.navigationController popViewControllerAnimated:YES];
             }
         }else {
             [Toast makeText:@"提交失败!!请检查网络连接!"];

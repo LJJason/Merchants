@@ -10,6 +10,8 @@
 
 @interface TRRoom : NSObject
 
+/** id */
+@property (nonatomic, assign) NSInteger ID;
 
 /** 图片 */
 @property (nonatomic, strong) NSArray *photos;
