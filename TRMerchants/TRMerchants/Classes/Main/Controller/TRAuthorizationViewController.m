@@ -37,7 +37,7 @@
  */
 @property (weak, nonatomic) IBOutlet UITextField *idNumTextField;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *commitBtn;
+@property (weak, nonatomic) IBOutlet UIButton *commitBtn;
 
 
 @end
@@ -62,16 +62,24 @@
 
 - (void)checkStateOfAudit{
     
+    self.commitBtn.hidden = NO;
+    
     [TRProgressTool showWithMessage:@"正在加载中..."];
     [TRAuthorizationStateTool authorizationStateWithSuccess:^(TRAuthorizationState state) {
-        if (state == TRAuthorizationStateToAudit) {//待审核
-            [self submitCompletedWithState:NO];
-        }else if (state == TRLoginStateAccountOK) {//已认证
-            [self submitCompletedWithState:YES];
-        }
+        
         [TRProgressTool dismiss];
         
+        [self submitCompletedWithState:state];
+        
     } failure:^{
+        
+        TRNoInternetConnectionView *noInternetView = [TRNoInternetConnectionView noInternetConnectionView];
+        noInternetView.frame = self.view.frame;
+        [self.view addSubview:noInternetView];
+        noInternetView.reloadAgainBlock = ^{
+            [self checkStateOfAudit];
+        };
+        
         [TRProgressTool dismiss];
     }];
     
@@ -79,7 +87,7 @@
 
 
 #pragma mark <提交>
-- (IBAction)submit:(UIBarButtonItem *)sender {
+- (IBAction)submit{
     
     [self.view endEditing:YES];
     
@@ -130,7 +138,7 @@
         
         if ([responseObject[@"state"] integerValue] == 1) {
             //提交完认证信息
-            [self submitCompletedWithState:NO];
+            [self submitCompletedWithState:TRAuthorizationStateToAudit];
         }
         
         
@@ -141,18 +149,29 @@
 }
 
 //正在审核状态显示的View
-- (void)submitCompletedWithState:(BOOL)state {
+- (void)submitCompletedWithState:(TRAuthorizationState)state {
+    
     TRAuthorizationView *authView = [TRAuthorizationView authorizationView];
+    authView.hidden = YES;
     authView.frame = self.view.frame;
     [self.view addSubview:authView];
-    
-    if (state) {
+    if (state == TRAuthorizationStateOK) {//已认证
+        authView.hidden = NO;
         authView.label.text = @"已认证";
+        self.commitBtn.hidden = YES;
+    }else if(state == TRAuthorizationStateFailed){//认证失败
+        authView.hidden = NO;
+        authView.errorView.hidden = NO;
+        self.commitBtn.hidden = YES;
+        authView.reloadBlock = ^{
+            self.commitBtn.hidden = NO;
+        };
+    }else if (state == TRAuthorizationStateToAudit){
+        authView.hidden = NO;
+        self.commitBtn.hidden = YES;
     }
     
-    NSMutableArray *rightBarButtonItems = [self.navigationItem.rightBarButtonItems mutableCopy];
-    [rightBarButtonItems removeObject:self.commitBtn];
-    self.navigationItem.rightBarButtonItems = rightBarButtonItems;
+    
 }
 
 
@@ -173,7 +192,6 @@
         [cell.imageButton setImage:nil forState:UIControlStateNormal];
         [cell.imageButton setBackgroundImage:self.images[indexPath.row] forState:UIControlStateNormal];
     }
-    cell.deleteBtn.hidden = YES;
     
     return cell;
 }

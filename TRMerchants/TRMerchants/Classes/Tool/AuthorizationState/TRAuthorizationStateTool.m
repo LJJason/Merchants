@@ -27,7 +27,11 @@
             if (state == 10001) {//待审核
                 success(TRAuthorizationStateToAudit);
             }else if (state == 10002) {//已审核
-                success(TRLoginStateAccountOK);
+                success(TRAuthorizationStateOK);
+            }else if (state == 10000){
+                success(TRAuthorizationStateNotAudit);
+            }else if (state == 10004){
+                success(TRAuthorizationStateFailed);
             }
         }
     } failure:^(NSError *error) {

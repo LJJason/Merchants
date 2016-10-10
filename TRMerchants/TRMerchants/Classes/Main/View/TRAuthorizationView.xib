@@ -27,14 +27,71 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKP-rh-cZ7">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="3iA-4x-OoJ"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Y3-GT-XYs">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="5" id="l8D-6X-45e"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="认证失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFu-LK-TDt">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhT-Rr-iWk">
+                            <string key="text">请保证相片清晰
+人证一致</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-Bi-dF0">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="LZK-zZ-S6d"/>
+                                <constraint firstAttribute="width" constant="70" id="UUj-W2-9t7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="重新提交" backgroundImage="grey">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="againCommit" destination="iN0-l3-epB" eventType="touchUpInside" id="Pby-fW-63F"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Pom-Bi-dF0" firstAttribute="top" secondItem="HhT-Rr-iWk" secondAttribute="bottom" constant="20" id="5aa-4Y-F4T"/>
+                        <constraint firstItem="4Y3-GT-XYs" firstAttribute="centerX" secondItem="SKP-rh-cZ7" secondAttribute="centerX" id="Bfq-kR-4aa"/>
+                        <constraint firstItem="ZFu-LK-TDt" firstAttribute="leading" secondItem="SKP-rh-cZ7" secondAttribute="leading" constant="10" id="CdL-Ux-MbJ"/>
+                        <constraint firstAttribute="trailing" secondItem="3iA-4x-OoJ" secondAttribute="trailing" constant="10" id="JW5-Wh-DQJ"/>
+                        <constraint firstItem="ZFu-LK-TDt" firstAttribute="top" secondItem="3iA-4x-OoJ" secondAttribute="bottom" constant="10" id="QY1-6N-fOW"/>
+                        <constraint firstItem="3iA-4x-OoJ" firstAttribute="leading" secondItem="SKP-rh-cZ7" secondAttribute="leading" constant="10" id="Xgl-el-WxI"/>
+                        <constraint firstAttribute="trailing" secondItem="ZFu-LK-TDt" secondAttribute="trailing" constant="10" id="aOP-cR-Wnq"/>
+                        <constraint firstItem="4Y3-GT-XYs" firstAttribute="height" secondItem="SKP-rh-cZ7" secondAttribute="height" multiplier="0.23" id="frU-nK-XTH"/>
+                        <constraint firstItem="HhT-Rr-iWk" firstAttribute="top" secondItem="ZFu-LK-TDt" secondAttribute="bottom" constant="5" id="hjv-8o-d1R"/>
+                        <constraint firstAttribute="trailing" secondItem="HhT-Rr-iWk" secondAttribute="trailing" constant="10" id="jqz-Ee-ErR"/>
+                        <constraint firstItem="Pom-Bi-dF0" firstAttribute="centerX" secondItem="SKP-rh-cZ7" secondAttribute="centerX" id="pdE-l9-BUm"/>
+                        <constraint firstItem="3iA-4x-OoJ" firstAttribute="top" secondItem="4Y3-GT-XYs" secondAttribute="bottom" id="qUg-hn-OEd"/>
+                        <constraint firstItem="4Y3-GT-XYs" firstAttribute="top" secondItem="SKP-rh-cZ7" secondAttribute="top" id="uvv-vQ-ThI"/>
+                        <constraint firstItem="HhT-Rr-iWk" firstAttribute="leading" secondItem="SKP-rh-cZ7" secondAttribute="leading" constant="10" id="z81-UR-lXO"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="SKP-rh-cZ7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="ARt-V1-fb3"/>
+                <constraint firstAttribute="bottom" secondItem="SKP-rh-cZ7" secondAttribute="bottom" constant="50" id="DyH-0f-VnD"/>
+                <constraint firstItem="SKP-rh-cZ7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="G57-mm-4p5"/>
                 <constraint firstAttribute="trailing" secondItem="qk1-cx-fNL" secondAttribute="trailing" id="KR7-ai-N42"/>
                 <constraint firstItem="Rjz-5Z-thW" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.35" id="LNS-KA-BbN"/>
                 <constraint firstItem="krm-qz-DeJ" firstAttribute="top" secondItem="qk1-cx-fNL" secondAttribute="bottom" constant="10" id="SK2-Xr-0eI"/>
                 <constraint firstItem="qk1-cx-fNL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cfc-KE-f0A"/>
                 <constraint firstItem="Rjz-5Z-thW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d4k-F7-Bhd"/>
+                <constraint firstAttribute="trailing" secondItem="SKP-rh-cZ7" secondAttribute="trailing" constant="10" id="gpG-S4-aLD"/>
                 <constraint firstAttribute="trailing" secondItem="krm-qz-DeJ" secondAttribute="trailing" constant="10" id="iaL-1f-amZ"/>
                 <constraint firstItem="qk1-cx-fNL" firstAttribute="top" secondItem="Rjz-5Z-thW" secondAttribute="bottom" id="kzY-Qv-aFt"/>
                 <constraint firstItem="krm-qz-DeJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rs1-3m-VQ8"/>
@@ -42,11 +99,16 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <connections>
+                <outlet property="againBtn" destination="Pom-Bi-dF0" id="XxD-qS-iH3"/>
+                <outlet property="errorView" destination="SKP-rh-cZ7" id="eZv-jH-xhh"/>
                 <outlet property="label" destination="krm-qz-DeJ" id="EVX-An-FQ4"/>
             </connections>
+            <point key="canvasLocation" x="35.5" y="98.5"/>
         </view>
     </objects>
     <resources>
         <image name="commit" width="128" height="128"/>
+        <image name="error" width="128" height="128"/>
+        <image name="grey" width="489" height="495"/>
     </resources>
 </document>

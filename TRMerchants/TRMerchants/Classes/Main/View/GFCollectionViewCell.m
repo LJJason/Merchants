@@ -29,32 +29,13 @@
 //    _imageView.contentMode = UIViewContentModeCenter;
     [self addSubview:_imageButton];
     
-    _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_deleteBtn setImage:[UIImage imageNamed:@"error"] forState:UIControlStateNormal];
-    [_deleteBtn addTarget:self action:@selector(deleteCell) forControlEvents:UIControlEventTouchUpInside];
-    _deleteBtn.hidden = YES;
-    [self addSubview:_deleteBtn];
-
-    self.clipsToBounds = YES;
-    
 }
 
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.imageButton.frame = self.bounds;
-    [self.deleteBtn sizeToFit];
     
-    CGRect frame = _deleteBtn.frame;
-    frame.origin.x = self.bounds.size.width - _deleteBtn.bounds.size.width;
-    frame.origin.y = 0;
-    _deleteBtn.frame = frame;
-}
-
-- (void)deleteCell{
-    if (self.deleteAction) {
-        self.deleteAction();
-    }
 }
 
 @end

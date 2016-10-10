@@ -15,7 +15,8 @@
 #import "UIViewController+TRExtension.h"
 #import "TRNavigationController.h"
 #import "UIView+GFExtension.h"
-#import "UIBarButtonItem+GFExtension.h"
+//#import "UIBarButtonItem+GFExtension.h"
+#import "TRNoInternetConnectionView.h"
 #import <MJExtension.h>
 #import "TRHttpTool.h"
 #import "Utilities.h"

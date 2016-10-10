@@ -48,6 +48,8 @@
 		C20FD37B1DA950C30013A090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20FD37A1DA950C30013A090 /* Assets.xcassets */; };
 		C20FD37F1DA952A70013A090 /* TRAuthorizationStateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C20FD37E1DA952A70013A090 /* TRAuthorizationStateTool.m */; };
 		C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F56831D9DF3F5005594A9 /* Utilities.m */; };
+		C221D93C1DAA81EF00438B27 /* TRCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C221D93B1DAA81EF00438B27 /* TRCheckBox.m */; };
+		C221D93F1DAA9D4300438B27 /* TRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C221D93E1DAA9D4300438B27 /* TRTableViewCell.m */; };
 		C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C22AC00E1D9273A40066A501 /* TRMerchants.xcdatamodeld */; };
 		C22AC0151D9273A40066A501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22AC0131D9273A40066A501 /* LaunchScreen.storyboard */; };
 		C22AC0201D9273A40066A501 /* TRMerchantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22AC01F1D9273A40066A501 /* TRMerchantsTests.m */; };
@@ -71,8 +73,12 @@
 		C28E2C9F1D9C1BFB0070BAAE /* TRRegistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2C9E1D9C1BFB0070BAAE /* TRRegistTool.m */; };
 		C28E2CA91D9C1DB90070BAAE /* TRGetVcCodeParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2CA81D9C1DB90070BAAE /* TRGetVcCodeParam.m */; };
 		C28E2CAC1D9C1DD20070BAAE /* TRRegistParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E2CAB1D9C1DD20070BAAE /* TRRegistParam.m */; };
+		C297FAF71DAA275500F7CC61 /* TRAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C297FAF61DAA275500F7CC61 /* TRAddCollectionViewCell.m */; };
+		C297FAFA1DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C297FAF91DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m */; };
 		C2B70D051D927C5A00DF5A4C /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */; };
 		C2B70D091D927D2900DF5A4C /* TRGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */; };
+		C2CBDCDB1DA9CF8A00F35E6E /* TRNoInternetConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CBDCDA1DA9CF8A00F35E6E /* TRNoInternetConnectionView.m */; };
+		C2CBDCDD1DA9D00B00F35E6E /* TRNoInternetConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2CBDCDC1DA9D00B00F35E6E /* TRNoInternetConnectionView.xib */; };
 		C2E7A1261DA8BE6400D2CB2C /* TRConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7A1251DA8BE6400D2CB2C /* TRConst.m */; };
 		C2E7A12C1DA8D44300D2CB2C /* TRAuthorizationParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7A12B1DA8D44300D2CB2C /* TRAuthorizationParam.m */; };
 		C2E7A12F1DA8DAA500D2CB2C /* TRAuthorizationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7A12E1DA8DAA500D2CB2C /* TRAuthorizationView.m */; };
@@ -162,6 +168,10 @@
 		C20FD37E1DA952A70013A090 /* TRAuthorizationStateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAuthorizationStateTool.m; sourceTree = "<group>"; };
 		C21F56821D9DF3F5005594A9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		C21F56831D9DF3F5005594A9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		C221D93A1DAA81EF00438B27 /* TRCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCheckBox.h; sourceTree = "<group>"; };
+		C221D93B1DAA81EF00438B27 /* TRCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCheckBox.m; sourceTree = "<group>"; };
+		C221D93D1DAA9D4200438B27 /* TRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTableViewCell.h; sourceTree = "<group>"; };
+		C221D93E1DAA9D4300438B27 /* TRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTableViewCell.m; sourceTree = "<group>"; };
 		C22ABFFF1D9273A40066A501 /* TRMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22AC00F1D9273A40066A501 /* TRMerchants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRMerchants.xcdatamodel; sourceTree = "<group>"; };
 		C22AC0141D9273A40066A501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -209,10 +219,17 @@
 		C28E2CA81D9C1DB90070BAAE /* TRGetVcCodeParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGetVcCodeParam.m; sourceTree = "<group>"; };
 		C28E2CAA1D9C1DD20070BAAE /* TRRegistParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegistParam.h; sourceTree = "<group>"; };
 		C28E2CAB1D9C1DD20070BAAE /* TRRegistParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegistParam.m; sourceTree = "<group>"; };
+		C297FAF51DAA275500F7CC61 /* TRAddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAddCollectionViewCell.h; sourceTree = "<group>"; };
+		C297FAF61DAA275500F7CC61 /* TRAddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAddCollectionViewCell.m; sourceTree = "<group>"; };
+		C297FAF81DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRoomImageCollectionViewCell.h; sourceTree = "<group>"; };
+		C297FAF91DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRoomImageCollectionViewCell.m; sourceTree = "<group>"; };
 		C2B70D031D927C5A00DF5A4C /* TRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainViewController.h; sourceTree = "<group>"; };
 		C2B70D041D927C5A00DF5A4C /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainViewController.m; sourceTree = "<group>"; };
 		C2B70D061D927D2900DF5A4C /* TRGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGuideViewController.h; sourceTree = "<group>"; };
 		C2B70D071D927D2900DF5A4C /* TRGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGuideViewController.m; sourceTree = "<group>"; };
+		C2CBDCD91DA9CF8A00F35E6E /* TRNoInternetConnectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNoInternetConnectionView.h; sourceTree = "<group>"; };
+		C2CBDCDA1DA9CF8A00F35E6E /* TRNoInternetConnectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNoInternetConnectionView.m; sourceTree = "<group>"; };
+		C2CBDCDC1DA9D00B00F35E6E /* TRNoInternetConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRNoInternetConnectionView.xib; sourceTree = "<group>"; };
 		C2E7A1241DA8BE6400D2CB2C /* TRConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRConst.h; sourceTree = "<group>"; };
 		C2E7A1251DA8BE6400D2CB2C /* TRConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRConst.m; sourceTree = "<group>"; };
 		C2E7A12A1DA8D44300D2CB2C /* TRAuthorizationParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAuthorizationParam.h; sourceTree = "<group>"; };
@@ -285,6 +302,9 @@
 			children = (
 				C20EF55A1DA78FDF00E2F59F /* TRBackButton.h */,
 				C20EF55B1DA78FDF00E2F59F /* TRBackButton.m */,
+				C2CBDCD91DA9CF8A00F35E6E /* TRNoInternetConnectionView.h */,
+				C2CBDCDA1DA9CF8A00F35E6E /* TRNoInternetConnectionView.m */,
+				C2CBDCDC1DA9D00B00F35E6E /* TRNoInternetConnectionView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +497,14 @@
 			isa = PBXGroup;
 			children = (
 				C20EF5571DA78CF500E2F59F /* Goods.storyboard */,
+				C297FAF51DAA275500F7CC61 /* TRAddCollectionViewCell.h */,
+				C297FAF61DAA275500F7CC61 /* TRAddCollectionViewCell.m */,
+				C297FAF81DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.h */,
+				C297FAF91DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m */,
+				C221D93A1DAA81EF00438B27 /* TRCheckBox.h */,
+				C221D93B1DAA81EF00438B27 /* TRCheckBox.m */,
+				C221D93D1DAA9D4200438B27 /* TRTableViewCell.h */,
+				C221D93E1DAA9D4300438B27 /* TRTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -839,6 +867,7 @@
 				C20EF5A31DA7EE8500E2F59F /* photo_sel_previewVc@2x.png in Resources */,
 				C20FD37B1DA950C30013A090 /* Assets.xcassets in Resources */,
 				C20EF5A61DA7EE8500E2F59F /* TableViewArrow@2x.png in Resources */,
+				C2CBDCDD1DA9D00B00F35E6E /* TRNoInternetConnectionView.xib in Resources */,
 				C20EF59C1DA7EE8500E2F59F /* navi_back@2x.png in Resources */,
 				C20EF5581DA78CF500E2F59F /* Goods.storyboard in Resources */,
 				C27E52D41D9A444400009909 /* LoginAndRegist.storyboard in Resources */,
@@ -926,6 +955,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C221D93C1DAA81EF00438B27 /* TRCheckBox.m in Sources */,
+				C2CBDCDB1DA9CF8A00F35E6E /* TRNoInternetConnectionView.m in Sources */,
 				C20EF5561DA78CCE00E2F59F /* TRGoodsTableViewController.m in Sources */,
 				C20EF5981DA7EE8500E2F59F /* AlbumListTableViewCell.m in Sources */,
 				C27E52DF1D9A4FBE00009909 /* TRLoginViewController.m in Sources */,
@@ -935,6 +966,7 @@
 				C27E52DC1D9A4D0F00009909 /* TRNavigationController.m in Sources */,
 				C27E52E41D9A563E00009909 /* UIBarButtonItem+GFExtension.m in Sources */,
 				C20EF5951DA7EE8500E2F59F /* AlbumDataHandle.m in Sources */,
+				C297FAF71DAA275500F7CC61 /* TRAddCollectionViewCell.m in Sources */,
 				C20EF5A81DA7EE8500E2F59F /* PhotoPickerCell.m in Sources */,
 				C20EF5961DA7EE8500E2F59F /* AlbumDataModel.m in Sources */,
 				C22AC04D1D9277240066A501 /* AppDelegate.m in Sources */,
@@ -944,6 +976,7 @@
 				C20FD37F1DA952A70013A090 /* TRAuthorizationStateTool.m in Sources */,
 				C22AC04E1D9277240066A501 /* main.m in Sources */,
 				C20EF5AB1DA7EE8500E2F59F /* PhotoPickerModel.m in Sources */,
+				C221D93F1DAA9D4300438B27 /* TRTableViewCell.m in Sources */,
 				C27E53731D9A73FD00009909 /* TRLoginAndRegistViewController.m in Sources */,
 				C2E7A1261DA8BE6400D2CB2C /* TRConst.m in Sources */,
 				C27E53761D9A765900009909 /* TRRegistViewController.m in Sources */,
@@ -953,6 +986,7 @@
 				C263F90F1D9B9B4200FF8BC4 /* TRHttpTool.m in Sources */,
 				C263F9141D9B9DA300FF8BC4 /* TRAccountTool.m in Sources */,
 				C20EF56C1DA7EBC800E2F59F /* GFCollectionViewCell.m in Sources */,
+				C297FAFA1DAA2C7D00F7CC61 /* TRRoomImageCollectionViewCell.m in Sources */,
 				C20EF55C1DA78FDF00E2F59F /* TRBackButton.m in Sources */,
 				C20EF5661DA7E32200E2F59F /* TRUser.m in Sources */,
 				C20EF5991DA7EE8500E2F59F /* AlbumNavigationController.m in Sources */,

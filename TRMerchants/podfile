@@ -3,4 +3,5 @@ pod 'AFNetworking'
 pod 'MJExtension'
 pod 'SVProgressHUD'
 pod 'Qiniu'
+pod 'HUPhotoBrowser'
 end

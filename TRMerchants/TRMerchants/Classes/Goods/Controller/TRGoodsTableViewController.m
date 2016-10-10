@@ -100,7 +100,7 @@
 
 - (IBAction)addGoodsBtn {
     
-    if (self.state == TRLoginStateAccountOK) {
+    if (self.state == TRAuthorizationStateOK) {
         
         TRAddRoomsViewController *addRoomVc = [TRAddRoomsViewController viewControllerWtithStoryboardName:@"Goods" identifier:@"TRAddRoomsViewController"];
         [self.navigationController pushViewController:addRoomVc animated:YES];

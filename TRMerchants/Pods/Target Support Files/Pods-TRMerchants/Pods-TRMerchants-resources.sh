@@ -80,9 +80,17 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/pick_checked@2x.png"
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/pick_checked@3x.png"
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/HUAlbumCell.xib"
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/HUImagePickerCell.xib"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/pick_checked@2x.png"
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/pick_checked@3x.png"
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/HUAlbumCell.xib"
+  install_resource "HUPhotoBrowser/HUPhotoBrowser/HUPhotoPicker/HUImagePickerCell.xib"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 

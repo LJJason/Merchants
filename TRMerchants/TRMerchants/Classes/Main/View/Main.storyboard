@@ -276,16 +276,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iu8-3b-jRf">
-                        <barButtonItem key="rightBarButtonItem" title="提交" id="7wc-Hv-lN3">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="submit:" destination="43O-n8-muS" id="H88-HL-SHa"/>
-                            </connections>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="dQU-2l-mX2">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="izO-MN-r7f">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-27" maxY="0.0"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit" destination="43O-n8-muS" eventType="touchUpInside" id="tot-t0-L0Y"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="JoC-FF-ec8" id="RoO-zy-e9z"/>
-                        <outlet property="commitBtn" destination="7wc-Hv-lN3" id="OLi-ki-yQ7"/>
+                        <outlet property="commitBtn" destination="izO-MN-r7f" id="ESF-wO-LDj"/>
                         <outlet property="idNumTextField" destination="m7p-gv-MMx" id="eVk-C0-WmD"/>
                         <outlet property="nameTextField" destination="ydg-6j-Zak" id="evv-cA-CgB"/>
                     </connections>

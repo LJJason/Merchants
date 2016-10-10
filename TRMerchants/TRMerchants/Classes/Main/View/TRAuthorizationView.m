@@ -8,6 +8,17 @@
 
 #import "TRAuthorizationView.h"
 
+@interface TRAuthorizationView ()
+
+@property (weak, nonatomic) IBOutlet UIButton *againBtn;
+
+
+
+
+@end
+
+
+
 @implementation TRAuthorizationView
 
 /*
@@ -18,8 +29,29 @@
 }
 */
 
+- (void)awakeFromNib {
+    self.againBtn.layer.cornerRadius = 5;
+}
+
 + (instancetype)authorizationView{
     return [[[NSBundle mainBundle] loadNibNamed:@"TRAuthorizationView" owner:nil options:nil] firstObject];
+}
+- (IBAction)againCommit {
+    
+    if (self.reloadBlock) {
+        self.reloadBlock();
+    }
+    
+    [TRProgressTool showWithMessage:@"正在加载..."];
+    
+    //延迟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self removeFromSuperview];
+        
+        [TRProgressTool dismiss];
+    });
+    
+    
 }
 
 

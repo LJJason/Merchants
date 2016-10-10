@@ -11,7 +11,8 @@
 typedef enum {
     TRAuthorizationStateNotAudit                = 10000,//未审核
     TRAuthorizationStateToAudit                 = 10001,//待审核
-    TRLoginStateAccountOK                       = 10002 //已认证
+    TRAuthorizationStateOK                      = 10002, //已认证
+    TRAuthorizationStateFailed                  = 10004  //认证失败
 }TRAuthorizationState;
 
 

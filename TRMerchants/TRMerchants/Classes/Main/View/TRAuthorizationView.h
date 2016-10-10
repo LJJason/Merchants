@@ -17,4 +17,12 @@
 
 + (instancetype)authorizationView;
 
+/**
+ *  认证失败的界面
+ */
+@property (weak, nonatomic) IBOutlet UIView *errorView;
+
+/** 重新提交按钮点击时回调 */
+@property (nonatomic, copy) void (^reloadBlock)();
+
 @end
