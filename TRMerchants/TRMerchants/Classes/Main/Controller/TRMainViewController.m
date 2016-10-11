@@ -8,6 +8,7 @@
 
 #import "TRMainViewController.h"
 #import "TRGoodsTableViewController.h"
+#import "TROrderTableViewController.h"
 
 @interface TRMainViewController ()
 
@@ -29,6 +30,14 @@
 }
 
 - (IBAction)order {
+    
+    TRNavigationController *nav = [TRNavigationController viewControllerWtithStoryboardName:@"Order" identifier:@"TRNavigationController"];
+    nav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:nav animated:YES completion:nil];
+    
+    
+    
+    
 }
 
 

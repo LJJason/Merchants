@@ -25,6 +25,11 @@
 
 /** 房间 */
 @property (nonatomic, strong) NSArray *rooms;
+/**
+ *  当无数据的时候充当背景的
+ */
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+
 
 @end
 
@@ -51,6 +56,9 @@
         [TRProgressTool dismiss];
     }];
     [self loadMoreRoom];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    
 }
 
 
@@ -88,11 +96,21 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    if (self.rooms.count == 0) {
+        tableView.hidden = YES;
+        self.bgView.hidden = NO;
+    }else {
+        tableView.hidden = NO;
+        self.bgView.hidden = YES;
+    }
+    
     return self.rooms.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     TRRoomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rooms"];
     
     cell.room = self.rooms[indexPath.row];
@@ -100,6 +118,41 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        TRRoom *room = self.rooms[indexPath.row];
+        
+        [TRProgressTool showWithMessage:@"正在删除.."];
+        [TRHttpTool GET:TRDeleteRoomUrl parameters:@{@"ID" : @(room.ID)} success:^(id responseObject) {
+            
+            NSInteger state = [responseObject[@"state"] integerValue];
+            
+            [TRProgressTool dismiss];
+            if (state == 1) {//删除成功
+                [Toast makeText:@"删除成功"];
+                
+            }else {
+                [Toast makeText:@"删除失败, 请检查网络"];
+            }
+            [self loadMoreRoom];
+        } failure:^(NSError *error) {
+            [TRProgressTool dismiss];
+            [Toast makeText:@"请检查网络连接!"];
+        }];
+    }
+    
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 130;
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -24,3 +24,6 @@ NSString * const TRAddRoomUrl = @"http://localhost:8080/TRMerchants/addroom";
 /** 查看房间接口 */
 NSString * const TRRoomUrl = @"http://localhost:8080/TRMerchants/getAllRoom";
 
+
+/** 删除房间接口 */
+NSString * const TRDeleteRoomUrl = @"http://localhost:8080/TRMerchants/deleteRoom";

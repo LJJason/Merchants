@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67B5B989C796FEA8A6FF283A /* libPods-TRMerchants.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0493DAE880C2A972B6143 /* libPods-TRMerchants.a */; };
+		C20CA0891DAC88AE00A3093E /* TROrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20CA0881DAC88AE00A3093E /* TROrderTableViewController.m */; };
+		C20CA08B1DAC891100A3093E /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20CA08A1DAC891100A3093E /* Order.storyboard */; };
 		C20EF54C1DA7724B00E2F59F /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF54B1DA7724B00E2F59F /* Toast.m */; };
 		C20EF5501DA781AF00E2F59F /* TRProgressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C20EF54F1DA781AF00E2F59F /* TRProgressTool.m */; };
 		C20EF5531DA78A5B00E2F59F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20EF5521DA78A5B00E2F59F /* Main.storyboard */; };
@@ -109,6 +111,9 @@
 /* Begin PBXFileReference section */
 		5AEAD10619A901C968458990 /* Pods-TRMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMerchants.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		96BBC9224893D5FDB25D09C5 /* Pods-TRMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMerchants.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRMerchants/Pods-TRMerchants.release.xcconfig"; sourceTree = "<group>"; };
+		C20CA0871DAC88AE00A3093E /* TROrderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TROrderTableViewController.h; sourceTree = "<group>"; };
+		C20CA0881DAC88AE00A3093E /* TROrderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TROrderTableViewController.m; sourceTree = "<group>"; };
+		C20CA08A1DAC891100A3093E /* Order.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
 		C20EF54A1DA7724B00E2F59F /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 		C20EF54B1DA7724B00E2F59F /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		C20EF54E1DA781AF00E2F59F /* TRProgressTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRProgressTool.h; sourceTree = "<group>"; };
@@ -610,6 +615,8 @@
 		C22AC0461D9277240066A501 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C20CA0871DAC88AE00A3093E /* TROrderTableViewController.h */,
+				C20CA0881DAC88AE00A3093E /* TROrderTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -624,6 +631,7 @@
 		C22AC0481D9277240066A501 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C20CA08A1DAC891100A3093E /* Order.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -932,6 +940,7 @@
 				C20EF5531DA78A5B00E2F59F /* Main.storyboard in Resources */,
 				C20EF59A1DA7EE8500E2F59F /* MMVideoPreviewPlay@2x.png in Resources */,
 				C20EF5A01DA7EE8500E2F59F /* photo_original_def@2x.png in Resources */,
+				C20CA08B1DAC891100A3093E /* Order.storyboard in Resources */,
 				C20EF59F1DA7EE8500E2F59F /* photo_number_icon@2x.png in Resources */,
 				C20EF5A51DA7EE8500E2F59F /* preview_original_def@2x.png in Resources */,
 				C20EF5A71DA7EE8500E2F59F /* VideoSendIcon@2x.png in Resources */,
@@ -1047,6 +1056,7 @@
 				C20EF5991DA7EE8500E2F59F /* AlbumNavigationController.m in Sources */,
 				C21F56841D9DF3F5005594A9 /* Utilities.m in Sources */,
 				C20EF5AD1DA7EE8500E2F59F /* PhotoPreviewController.m in Sources */,
+				C20CA0891DAC88AE00A3093E /* TROrderTableViewController.m in Sources */,
 				C22AC0101D9273A40066A501 /* TRMerchants.xcdatamodeld in Sources */,
 				C28E2CA91D9C1DB90070BAAE /* TRGetVcCodeParam.m in Sources */,
 				C20EF5691DA7E79900E2F59F /* TRAuthorizationViewController.m in Sources */,
