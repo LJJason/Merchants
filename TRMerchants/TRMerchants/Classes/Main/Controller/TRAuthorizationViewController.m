@@ -221,7 +221,7 @@
 #pragma mark <图片选择器>
 - (void)pickView {
     AlbumNavigationController *navigation = [[AlbumNavigationController alloc] initWithMaxImagesCount:3 delegate:self];
-    
+    navigation.navigationBar.barTintColor = [UIColor redColor];
     [self presentViewController:navigation animated:YES completion:nil];
 }
 
