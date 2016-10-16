@@ -66,8 +66,8 @@
     [self addChildViewController:nav];
     nav.view.frame = CGRectMake(TRScreenW, 0, TRScreenW, TRScreenH);
     
-    [UIView animateWithDuration:0.5 animations:^{
-        self.view.x = -TRScreenW;
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.x = -TRScreenW + 300;
         nav.view.x = 0;
     }];
 }
