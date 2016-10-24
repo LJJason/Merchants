@@ -321,7 +321,7 @@
     for (int i = 0; i < photos.count; i++) {
         UIImage *temImage = photos[i];
         //压缩图片
-        NSData *data = UIImageJPEGRepresentation(temImage, 0.1);
+        NSData *data = UIImageJPEGRepresentation(temImage, 0.5);
         [imageArray addObject:[UIImage imageWithData:data]];
     }
     
