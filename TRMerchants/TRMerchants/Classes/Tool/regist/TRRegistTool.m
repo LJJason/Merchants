@@ -56,7 +56,7 @@
 + (void)registWithParam:(TRRegistParam *)param success:(void (^)(TRRegistState))success failure:(void (^)(NSError *))failure {
     [TRHttpTool POST:TRRegistUrl parameters:param.mj_keyValues success:^(id responseObject) {
         
-        NSString *ret = [responseObject[@"state"] stringValue];
+        NSString *ret = responseObject[@"state"];
         
         TRRegistState state = TRRegistStateVcCodeMistake;
         
